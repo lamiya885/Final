@@ -1,0 +1,6 @@
+@Final_CFF.API_HostAddress = http://localhost:5247
+
+GET {{Final_CFF.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

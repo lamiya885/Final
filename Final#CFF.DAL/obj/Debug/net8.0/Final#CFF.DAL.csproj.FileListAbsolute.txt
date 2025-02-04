@@ -1,0 +1,17 @@
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.DAL.deps.json
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.DAL.runtimeconfig.json
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.DAL.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.DAL.pdb
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.Core.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\bin\Debug\net8.0\Final#CFF.Core.pdb
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.AssemblyInfo.cs
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CF.27B921C0.Up2Date
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\refint\Final#CFF.DAL.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.pdb
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\Final#CFF.DAL.genruntimeconfig.cache
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.DAL\obj\Debug\net8.0\ref\Final#CFF.DAL.dll
