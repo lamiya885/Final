@@ -17,7 +17,7 @@ public class ApartmentConfiguration : IEntityTypeConfiguration<Apartment>
             .IsRequired();
 
         builder.HasMany(a => a.Users)
-            .WithOne(a=>a.Apartment)
+            .WithOne(a => a.Apartment)
             .HasForeignKey(a => a.ApertmentId);
 
         builder.HasOne(a => a.Building)

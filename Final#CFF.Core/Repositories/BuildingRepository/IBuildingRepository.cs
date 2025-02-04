@@ -7,7 +7,7 @@ using Final_CFF.Core.Entity;
 
 namespace Final_CFF.Core.Repositories.BuildingRepository
 {
-    public interface IBuildingRepository:IGenericRepository<Building>
+    public interface IBuildingRepository : IGenericRepository<Building>
     {
 
     }

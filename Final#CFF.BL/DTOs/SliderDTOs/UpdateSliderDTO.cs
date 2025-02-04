@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Final_CFF.Core.Entity.Common;
+using Microsoft.AspNetCore.Http;
 
-namespace Final_CFF.Core.Entity;
+namespace Final_CFF.BL.DTOs.SliderDTOs;
 
-public class Slider : BaseEntity
+public class UpdateSliderDTO
 {
     public string Title { get; set; }
     public string Subtitle { get; set; }
-    public string ImageUrl { get; set; }
+    public IFormFile Image { get; set; }
 }

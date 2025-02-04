@@ -7,8 +7,9 @@ using Final_CFF.BL.DTOs.SliderDTOs;
 
 namespace Final_CFF.BL.Services.Interfaces
 {
-    public  interface ISliderService
+    public interface ISliderService
     {
         Task<int> CreateAsync(CreateSliderDTO dto);
+        Task<int> UpdateAsync(UpdateSliderDTO dto);
     }
 }
