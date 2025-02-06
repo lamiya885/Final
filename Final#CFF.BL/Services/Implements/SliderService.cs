@@ -12,6 +12,18 @@ namespace Final_CFF.BL.Services.Implements;
 
 public class SliderService(ISliderRepository _repo) : ISliderService
 {
+    public async Task<IEnumerable<SliderGetDTO>> GatAllAsync()
+    {
+        var entities = _repo.GetAll();
+
+        return entities.Select(x => new SliderGetDTO
+        {
+            Title = x.Title,
+            Subtitle = x.Subtitle,
+           //Image=x.ImageUrl.UploadAsync
+        });
+
+    }
     public async Task<Guid> CreateAsync(CreateSliderDTO dto)
     {
         Slider slider = new Slider()
@@ -30,9 +42,9 @@ public class SliderService(ISliderRepository _repo) : ISliderService
 
     public async Task<Guid> UpdateAsync(UpdateSliderDTO dto, Guid id)
     {
-        var entity =await _repo.GetByIdAsync(id);
-        entity.Title=dto.Title;
-        entity.Subtitle=dto.Subtitle;
+        var entity = await _repo.GetByIdAsync(id);
+        entity.Title = dto.Title;
+        entity.Subtitle = dto.Subtitle;
 
         await _repo.AddAsync(entity);
         await _repo.SaveAsync();
@@ -43,7 +55,7 @@ public class SliderService(ISliderRepository _repo) : ISliderService
     {
         var entity = await _repo.GetByIdAsync(id);
 
-       _repo.Remove(entity);
+        _repo.Remove(entity);
         await _repo.SaveAsync();
         return entity.Id;
     }

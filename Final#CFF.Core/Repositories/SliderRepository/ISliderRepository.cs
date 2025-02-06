@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Final_CFF.Core.Entity;
 
-namespace Final_CFF.Core.Repositories.SliderRepository
+namespace Final_CFF.Core.Repositories.SliderRepository;
+
+public interface ISliderRepository : IGenericRepository<Slider>
 {
-    public interface ISliderRepository:IGenericRepository<Slider>
-    {
-    }
 }

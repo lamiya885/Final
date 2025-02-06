@@ -7,12 +7,12 @@ using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.BuildingRepository;
 using Final_CFF.DAL.Context;
 
-namespace Final_CFF.DAL.Repositories
+namespace Final_CFF.DAL.Repositories;
+
+public class BuildingRepository : GenericRepository<Building>, IBuildingRepository
 {
-    public class BuildingRepository : GenericRepository<Building>, IBuildingRepository
+    public BuildingRepository(FinalDbContext _context) : base(_context)
     {
-        public BuildingRepository(FinalDbContext _context) : base(_context)
-        {
-        }
+
     }
 }

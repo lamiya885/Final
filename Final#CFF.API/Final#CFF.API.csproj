@@ -25,8 +25,4 @@
     <ProjectReference Include="..\Final#CFF.BL\Final#CFF.BL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

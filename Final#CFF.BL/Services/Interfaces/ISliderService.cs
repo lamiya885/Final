@@ -9,7 +9,8 @@ namespace Final_CFF.BL.Services.Interfaces
 {
     public interface ISliderService
     {
-        
+
+        Task<IEnumerable<SliderGetDTO>> GatAllAsync();
         Task<Guid> CreateAsync(CreateSliderDTO dto);
         Task<Guid> UpdateAsync(UpdateSliderDTO dto,Guid id);
         Task<Guid> DeleteAsync(Guid id);

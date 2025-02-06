@@ -15,3 +15,4 @@ C:\Users\hp\source\repos\Final#CFF\Final#CFF.BL\obj\Debug\net8.0\Final#CFF.BL.dl
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.BL\obj\Debug\net8.0\refint\Final#CFF.BL.dll
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.BL\obj\Debug\net8.0\Final#CFF.BL.pdb
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.BL\obj\Debug\net8.0\ref\Final#CFF.BL.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.BL\obj\Debug\net8.0\Final#CFF.BL.sourcelink.json
