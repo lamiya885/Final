@@ -13,6 +13,12 @@ namespace Final_CFF.BL.Exceptions.Common
 
         public string ErrorMessage { get; }
         public ExistException(string message):base(message)
-        { }
+        {
+            ErrorMessage = message;
+        }
+    }
+    public class ExistException<T> : ExistException
+    {
+        public ExistException() : base(typeof(T).Name + "is exist") { }
     }
 }
