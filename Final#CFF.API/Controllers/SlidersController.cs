@@ -7,27 +7,27 @@ namespace Final_CFF.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SlidersController(ISliderService _service): ControllerBase
+    public class SlidersController(ISliderService _service) : ControllerBase
     {
         [HttpGet]
-            public async Task<IActionResult> Get()
-            {
-                var result = await _service.GatAllAsync();
-                return Ok(result);
-            }
-
-            [HttpPost]
-            public async Task<IActionResult> CreateAsync(CreateSliderDTO DTO)
-            {
-                await _service.CreateAsync(DTO);
-                return Ok(DTO);
-            }
-
-            [HttpDelete]
-            public async Task<IActionResult> DeleteAsync(Guid id)
-            {
-                await _service.DeleteAsync(id); 
-            return Ok();
-            }
+        public async Task<IActionResult> Get()
+        {
+            var result = await _service.GatAllAsync();
+            return Ok(result);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateSliderDTO DTO)
+        {
+            await _service.CreateAsync(DTO);
+            return Ok(DTO);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await _service.DeleteAsync(id);
+            return Ok();
+        }
+    }
 }

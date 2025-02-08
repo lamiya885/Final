@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Buildings": {
+    "/api/Buildings/GetAll": {
       "get": {
         "tags": [
           "Buildings"
@@ -15,7 +15,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Buildings/Create": {
       "post": {
         "tags": [
           "Buildings"
@@ -44,7 +46,50 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Buildings/Update": {
+      "post": {
+        "tags": [
+          "Buildings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBuildingDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBuildingDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBuildingDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Buildings/Delete": {
       "delete": {
         "tags": [
           "Buildings"
@@ -148,6 +193,16 @@
   "components": {
     "schemas": {
       "CreateBuildingDTO": {
+        "type": "object",
+        "properties": {
+          "buildingName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateBuildingDTO": {
         "type": "object",
         "properties": {
           "buildingName": {
