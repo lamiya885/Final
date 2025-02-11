@@ -19,11 +19,11 @@ namespace Final_CFF.BL
             services.AddScoped<ISliderService, SliderService>();
             return services;
         }
-        public static IServiceCollection AddFluentValidation(this IServiceCollection services)
-        {
-            services.AddFluentValidationAutoValidation();
-            services.AddValidatorsFromAssemblyContaining(typeof(LoginDTO));
-            return services;
-        }
+        //public static IServiceCollection AddFluentValidation(this IServiceCollection services)
+        //{
+        //    services.AddFluentValidationAutoValidation();
+        //    services.AddValidatorsFromAssemblyContaining(typeof(LoginDTO));
+        //    return services;
+        //}
     }
 }

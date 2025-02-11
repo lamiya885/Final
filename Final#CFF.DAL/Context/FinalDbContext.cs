@@ -15,10 +15,10 @@ public class FinalDbContext : DbContext
 
     }
 
-    DbSet<Building> Buildings { get; set; }
-    DbSet<Apartment> Residents { get; set; }
-    DbSet<User> Users { get; set; }
-    DbSet<Slider> Sliders { get; set; }
+    public DbSet<Building> Buildings { get; set; }
+    public DbSet<Apartment> Residents { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Slider> Sliders { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

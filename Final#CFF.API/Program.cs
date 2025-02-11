@@ -22,7 +22,7 @@ namespace Final_CFF.API
             );
             builder.Services.AddRepositories();
             builder.Services.AddServices();
-            builder.Services.AddFluentValidation();
+            //builder.Services.AddFluentValidation();
             builder.Services.AddMemoryCache();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
