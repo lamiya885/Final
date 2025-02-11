@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Final_CFF.Core.Enums;
 
-public  enum Roles
+public enum Roles
 {
     Resident=1,
     BuildingManager=2,
-    
     
     Admin= Resident | BuildingManager
 }
