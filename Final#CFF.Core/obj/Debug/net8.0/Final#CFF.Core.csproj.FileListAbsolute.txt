@@ -10,3 +10,4 @@ C:\Users\hp\source\repos\Final#CFF\Final#CFF.Core\obj\Debug\net8.0\refint\Final#
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.Core\obj\Debug\net8.0\Final#CFF.Core.pdb
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.Core\obj\Debug\net8.0\ref\Final#CFF.Core.dll
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.Core\obj\Debug\net8.0\Final#CFF.Core.sourcelink.json
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.Core\obj\Debug\net8.0\Final#CFF.Core.csproj.AssemblyReference.cache

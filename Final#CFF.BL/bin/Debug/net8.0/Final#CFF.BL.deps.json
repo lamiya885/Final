@@ -12,7 +12,8 @@
           "FluentValidation": "11.11.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "StackExchange.Redis": "2.8.24"
         },
         "runtime": {
           "Final#CFF.BL.dll": {}
@@ -82,6 +83,25 @@
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.5.1.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/8.0.13": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6610"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.13": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "8.0.13"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6610"
           }
         }
       },
@@ -259,6 +279,32 @@
           }
         }
       },
+      "Microsoft.Extensions.Identity.Core/8.0.13": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "8.0.13",
+          "Microsoft.Extensions.Logging": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6610"
+          }
+        }
+      },
+      "Microsoft.Extensions.Identity.Stores/8.0.13": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Identity.Core": "8.0.13",
+          "Microsoft.Extensions.Logging": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6610"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
@@ -413,6 +459,29 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Pipelines.Sockets.Unofficial/2.2.8": {
+        "dependencies": {
+          "System.IO.Pipelines": "5.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.2.8.1080"
+          }
+        }
+      },
+      "StackExchange.Redis/2.8.24": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Pipelines.Sockets.Unofficial": "2.2.8"
+        },
+        "runtime": {
+          "lib/net8.0/StackExchange.Redis.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.8.24.3255"
           }
         }
       },
@@ -594,6 +663,9 @@
         }
       },
       "Final#CFF.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "8.0.13"
+        },
         "runtime": {
           "Final#CFF.Core.dll": {
             "assemblyVersion": "1.0.0",
@@ -604,6 +676,7 @@
       "Final#CFF.DAL/1.0.0": {
         "dependencies": {
           "Final#CFF.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12"
         },
         "runtime": {
@@ -655,6 +728,20 @@
       "sha512": "sha512-iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
       "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/8.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ajbViewn2/4ZwE5jeP5t+JqF3KvagBsPxFADZd0zR6fw5HDvPmeFtaGP57p2ofg9yeLSKw9sug4n351UiRKwpA==",
+      "path": "microsoft.aspnetcore.cryptography.internal/8.0.13",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.8.0.13.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hxqUOifq+9aDxhla0KzOtFKuJ92RazTLig21WwXzeIOqmvLndPWVebqZBez3UR6KnLtS6OT/IUUsJ9h70WO4wA==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.13",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.8.0.13.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
       "type": "package",
@@ -768,6 +855,20 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
     },
+    "Microsoft.Extensions.Identity.Core/8.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/RWLas2PEtUCNxwCb6Iwy1jM7sUWoeB6cc1g/1M//ar+XYrjYCbshLA+Adq9k0DkKCf2GjDhWl6obVStx++tSQ==",
+      "path": "microsoft.extensions.identity.core/8.0.13",
+      "hashPath": "microsoft.extensions.identity.core.8.0.13.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/8.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IqYIYxUnwF12GMpr7AP6VqzcYRuGxD97sSjbIOXZtxUWuMi4+oVtI4ca0cSuLjpw7VqqCn2Q6nr2BjwSJ380Rw==",
+      "path": "microsoft.extensions.identity.stores/8.0.13",
+      "hashPath": "microsoft.extensions.identity.stores.8.0.13.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -879,6 +980,20 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Pipelines.Sockets.Unofficial/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
+      "path": "pipelines.sockets.unofficial/2.2.8",
+      "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
+    },
+    "StackExchange.Redis/2.8.24": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GWllmsFAtLyhm4C47cOCipGxyEi1NQWTFUHXnJ8hiHOsK/bH3T5eLkWPVW+LRL6jDiB3g3izW3YEHgLuPoJSyA==",
+      "path": "stackexchange.redis/2.8.24",
+      "hashPath": "stackexchange.redis.2.8.24.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

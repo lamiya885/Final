@@ -16,13 +16,13 @@ namespace Final_CFF.API
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddDbContext<FinalDbContext>(option=>
+            builder.Services.AddDbContext<FinalDbContext>(option =>
             option.UseSqlServer(
                 builder.Configuration.GetConnectionString("MSSQL"))
             );
             builder.Services.AddRepositories();
             builder.Services.AddServices();
-            //builder.Services.AddFluentValidation();
+            builder.Services.AddFluentValidation();
             builder.Services.AddMemoryCache();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

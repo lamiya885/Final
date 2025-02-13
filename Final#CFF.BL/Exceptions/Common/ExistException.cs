@@ -5,20 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace Final_CFF.BL.Exceptions.Common
-{
-    public class ExistException : Exception, IBaseException
-    {
-        public int StatusCode => StatusCodes.Status409Conflict;
+namespace Final_CFF.BL.Exceptions.Common;
 
-        public string ErrorMessage { get; }
-        public ExistException(string message):base(message)
-        {
-            ErrorMessage = message;
-        }
-    }
-    public class ExistException<T> : ExistException
+public class ExistException : Exception, IBaseException
+{
+    public int StatusCode => StatusCodes.Status409Conflict;
+
+    public string ErrorMessage { get; }
+    public ExistException(string message) : base(message)
     {
-        public ExistException() : base(typeof(T).Name + "is exist") { }
+        ErrorMessage = message;
     }
+}
+public class ExistException<T> : ExistException
+{
+    public ExistException() : base(typeof(T).Name + " is exist ") { }
 }

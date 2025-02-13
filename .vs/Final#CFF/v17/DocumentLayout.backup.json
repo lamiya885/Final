@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\Final#CFF\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\exceptions\\common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\exceptions\\common\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\exceptions\\common\\existexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\exceptions\\common\\existexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\exceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\exceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\extentions\\seedextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\extentions\\seedextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\validators\\building\\createbuildingdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\validators\\building\\createbuildingdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.core\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|solutionrelative:final#cff.core\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.core\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|solutionrelative:final#cff.core\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.dal\\migrations\\finaldbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|solutionrelative:final#cff.dal\\migrations\\finaldbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|solutionrelative:final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\validators\\authvalidators\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\validators\\authvalidators\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\validators\\authvalidators\\logindtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\validators\\authvalidators\\logindtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\validators\\building\\createbuildingdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\validators\\building\\createbuildingdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\validators\\slidervalidators\\createsliderdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\validators\\slidervalidators\\createsliderdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,20 +71,8 @@
       "RelativeMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|solutionrelative:final#cff.dal\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|solutionrelative:final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\implements\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\services\\implements\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.core\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|solutionrelative:final#cff.core\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\dtos\\buildingdtos\\createbuildingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.core\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|solutionrelative:final#cff.core\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.core\\repositories\\apartmentrepository\\iapartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76659D57-A8C3-4066-B528-5245032727A1}|Final#CFF.Core\\Final#CFF.Core.csproj|solutionrelative:final#cff.core\\repositories\\apartmentrepository\\iapartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -94,254 +102,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateBuildingDTOValidator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\Common\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Exceptions\\Common\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\Common\\NotFoundException.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Exceptions\\Common\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:52:24.249Z",
+              "WhenOpened": "2025-02-13T00:12:41.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\Auth\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\RegisterDTO.cs",
-              "RelativeToolTip": "Final#CFF.BL\\DTOs\\Auth\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ExistException.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\Common\\ExistException.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Exceptions\\Common\\ExistException.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\Common\\ExistException.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Exceptions\\Common\\ExistException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:32:47.822Z",
+              "WhenOpened": "2025-02-13T00:10:48.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterDTOValidator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
-              "ViewState": "AgIAAAsAAADgcWZmZmYkwDEAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:52:47.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateSliderDTOValidator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
+              "Title": "IBaseException.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\IBaseException.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Exceptions\\IBaseException.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Exceptions\\IBaseException.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Exceptions\\IBaseException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:21:27.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDTOValidator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\LoginDTOValidator.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\AuthValidators\\LoginDTOValidator.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\LoginDTOValidator.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Validators\\AuthValidators\\LoginDTOValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:21:23.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeedExtention.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Extentions\\SeedExtention.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Extentions\\SeedExtention.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Extentions\\SeedExtention.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Extentions\\SeedExtention.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:11:45.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IBuildingService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:15:43.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:12:19.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ISliderService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:01:42.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAAEAAADsZWZmZmYUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:39:10.298Z",
+              "WhenOpened": "2025-02-13T00:07:59.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
-              "RelativeToolTip": "Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FinalDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Migrations\\FinalDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Final#CFF.DAL\\Migrations\\FinalDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Migrations\\FinalDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Final#CFF.DAL\\Migrations\\FinalDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADwAAAAACgAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T15:31:42.582Z",
+              "WhenOpened": "2025-02-12T22:38:54.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\Program.cs",
               "RelativeDocumentMoniker": "Final#CFF.API\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\Program.cs",
               "RelativeToolTip": "Final#CFF.API\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAABAZWZmZmYowB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:22:43.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T19:22:43.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SliderService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\SliderService.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\SliderService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\SliderService.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\SliderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:01:37.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\ServiceRegistration.cs",
-              "RelativeToolTip": "Final#CFF.BL\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAYAAAAAMzMzMzMnwBoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:28:34.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.Core\\Entity\\User.cs",
               "RelativeDocumentMoniker": "Final#CFF.Core\\Entity\\User.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.Core\\Entity\\User.cs",
               "RelativeToolTip": "Final#CFF.Core\\Entity\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T16:37:06.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Final#CFF.DAL\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Final#CFF.DAL\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAUAAABAmpmZmZknwBgAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeToolTip": "Final#CFF.BL\\DTOs\\Auth\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:39:18.194Z"
+              "WhenOpened": "2025-02-11T15:31:42.582Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UpdateBuildingDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
-              "RelativeToolTip": "Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SeedExtention.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Extentions\\SeedExtention.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Extentions\\SeedExtention.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Extentions\\SeedExtention.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Extentions\\SeedExtention.cs",
+              "ViewState": "AgIAAA4AAAAAoJmZmZnxvykAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:50:32.535Z"
+              "WhenOpened": "2025-02-11T19:11:45.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BuildingService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
-              "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
-              "ViewState": "AgIAAAQAAACwmZmZmdklwDIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:53:44.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateBuildingDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
-              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
-              "RelativeToolTip": "Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:15:05.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 6,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.Core\\Entity\\Slider.cs",
               "RelativeDocumentMoniker": "Final#CFF.Core\\Entity\\Slider.cs",
@@ -353,7 +221,163 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\ServiceRegistration.cs",
+              "RelativeToolTip": "Final#CFF.BL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAYAAAAAMzMzMzMnwBgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T19:28:34.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterDTOValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Validators\\AuthValidators\\RegisterDTOValidator.cs",
+              "ViewState": "AgIAAAsAAADwODMzMzM5wDEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T19:52:47.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateSliderDTOValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Validators\\SliderValidators\\CreateSliderDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T19:21:27.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateBuildingDTOValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Validators\\Building\\CreateBuildingDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T21:52:24.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IBuildingService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\IBuildingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T19:15:43.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T19:12:19.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISliderService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\ISliderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:01:42.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAEAAADsZWZmZmYUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:39:10.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SliderService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\SliderService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\SliderService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\SliderService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\SliderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:01:37.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Final#CFF.DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Final#CFF.DAL\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAUAAABAmpmZmZknwBgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:39:18.194Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "UpdateBuildingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
+              "RelativeToolTip": "Final#CFF.BL\\DTOs\\BuildingDTOs\\UpdateBuildingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:50:32.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BuildingService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
+              "ViewState": "AgIAAAQAAACwmZmZmdklwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:53:44.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateBuildingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
+              "RelativeToolTip": "Final#CFF.BL\\DTOs\\BuildingDTOs\\CreateBuildingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:15:05.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "IApartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.Core\\Repositories\\ApartmentRepository\\IApartmentRepository.cs",
               "RelativeDocumentMoniker": "Final#CFF.Core\\Repositories\\ApartmentRepository\\IApartmentRepository.cs",

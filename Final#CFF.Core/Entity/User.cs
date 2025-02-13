@@ -17,6 +17,8 @@ public class User : BaseEntity
     public string PasswordHash { get; set; }
     public bool IsEmailConfirmed { get; set; }
     public int Role { get; set; }
+    public bool IsBanned { get; set; }
+    public DateTime? UnlockTime { get; set; }
     public Guid ApertmentId { get; set; }
     public Apartment Apartment { get; set; }
 }

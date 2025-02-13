@@ -10,7 +10,7 @@ namespace Final_CFF.DAL.Context;
 
 public class FinalDbContext : DbContext
 {
-    public FinalDbContext(DbContextOptions options) : base(options)
+    public FinalDbContext(DbContextOptions<FinalDbContext> options) : base(options)
     {
 
     }

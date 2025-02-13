@@ -19,14 +19,26 @@ public static class SeedExtention
         using (var scope = app.ApplicationServices.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-            //if (!roleManager.Roles.Any())
+            if (!roleManager.Roles.Any())
+            {
+                foreach (var item in Enum.GetValues(typeof(Roles)))
+                {
+                    roleManager.CreateAsync(new IdentityRole(item.ToString())).Wait();
+                }
+            }
+            //if (!userManager.Users.Any(x => x.NormalizedUserName=="ADMIN"))
             //{
-            //    foreach (var item in Enum.GetValues(typeof(Roles)))
+            //    User user = new User()
             //    {
-            //        roleManager.CreateAsync(new IdentityRole(item.ToString())).Wait();
-            //    }
+            //        FullName = "admin",
+            //        UserName = "admin",
+            //        UserEmail = "admin@gmail.com",
+            //        Image = "photo.jpg"
+            //    };
+            //    userManager.CreateAsync(user,"1234").Wait();
+            //    userManager.AddToRoleAsync(user,nameof(Roles.Admin)).Wait();
             //}
         }
     }
