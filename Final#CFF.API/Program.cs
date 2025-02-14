@@ -1,9 +1,14 @@
 
 using Final_CFF.BL;
+using Final_CFF.BL.Exceptions;
 using Final_CFF.DAL;
 using Final_CFF.DAL.Context;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using MongoDB.Driver.Core.Misc;
 
 namespace Final_CFF.API
 {
@@ -36,6 +41,35 @@ namespace Final_CFF.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            //app.UseExceptionHandler(
+            //    opt =>
+            //    {
+            //        opt.Run(async context =>
+            //        {
+            //            var feature = context.Features.GetRequiredFeature<ExceptionHandlerFeature>();
+            //            var exception = feature.Error;
+            //            if (exception is IBaseException bEx)
+            //            {
+            //                context.Response.StatusCode = bEx.StatusCode;
+            //                await context.Response.WriteAsJsonAsync(new
+            //                {
+            //                    Message = bEx.ErrorMessage
+            //                });
+
+            //            }
+            //            else
+            //            {
+            //                context.Response.StatusCode = 400;
+            //                await context.Response.WriteAsJsonAsync(new
+            //                {
+            //                    Message = "Bir xeta bas verdi!"
+            //                });
+            //            }
+            //        }
+            //            );
+            //    }
+            //);
 
             app.UseHttpsRedirection();
 

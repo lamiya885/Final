@@ -7,7 +7,7 @@ using Final_CFF.Core.Entity;
 
 namespace Final_CFF.Core.Repositories.UserRerpository;
 
-public interface IUserRepository
+public interface IUserRepository:IGenericRepository<User>
 {
     User GetCurrentUser();
     Guid GetCurrentUserId();
