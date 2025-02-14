@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Final_CFF.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class SlidersController(ISliderService _service) : ControllerBase
     {

@@ -39,7 +39,8 @@ namespace Final_CFF.BL.Validators.AuthValidators
                 .MinimumLength(8)
                 .WithMessage("Email must be more than 8 characters!")
                 .MaximumLength(32)
-                .WithMessage("Email must be less than 32 characters!");
+                .WithMessage("Email must be less than 32 characters!")
+                .EmailAddress();
             RuleFor(r => r.Password)
                 .NotEmpty()
                 .NotNull()

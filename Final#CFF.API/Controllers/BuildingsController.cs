@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Final_CFF.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class BuildingsController (IBuildingService _service): ControllerBase
     {
-        [HttpGet("[action]")]
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _service.GetAllAsync());
@@ -22,21 +22,21 @@ namespace Final_CFF.API.Controllers
 
         }
 
-        [HttpPost("[action]")]
+        [HttpPost]
         public async Task<IActionResult> Create(CreateBuildingDTO dto)
         {
             await _service.CreateAsync(dto);    
             return Ok(dto);
         }
 
-        [HttpPost("[action]")]
+        [HttpPost]
         public async Task<IActionResult>Update(Guid id, UpdateBuildingDTO dto)
         {
             await _service.UpdateAsync(dto, id);
             return Ok(dto);
         }
 
-        [HttpDelete("[action]")]
+        [HttpDelete]
         public async Task<IActionResult> Delete(Guid id)
         {
             await _service.DeleteAsync(id);
