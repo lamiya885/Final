@@ -9,17 +9,18 @@ using Final_CFF.BL.Helpers;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.UserRerpository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class AuthService(IUserRepository _repo): IAuthService
+public class AuthService(UserManager<User> _userManager,SignInManager<User>) : IAuthService
 {
     public async Task<string> LoginAsync(LoginDTO DTO)
     {
         var user = await _repo.GetAll()
             .Where(x => x.UserEmail == DTO.UserNameOrUserEmail || x.UserEmail == DTO.UserNameOrUserEmail).FirstOrDefaultAsync();
-        return HashHelper.VerifyHashedPassword(user.PasswordHash,DTO.Password).ToString();
+        return HashHelper.VerifyHashedPassword(user.PasswordHash, DTO.Password).ToString();
     }
 
     public async Task RegisterAsync(RegisterDTO DTO)
@@ -29,7 +30,7 @@ public class AuthService(IUserRepository _repo): IAuthService
             .Where(x => x.UserEmail == DTO.UserName || x.UserEmail == DTO.Email).FirstOrDefaultAsync();
         if (user is null)
         {
-            if(user.UserName==DTO.UserName)
+            if (user.UserName == DTO.UserName)
             {
                 throw new ExistException("User Name already using ");
             }
@@ -49,7 +50,7 @@ public class AuthService(IUserRepository _repo): IAuthService
             await _repo.AddAsync(entity);
             await _repo.SaveAsync();
 
-            
+
         }
     }
 }

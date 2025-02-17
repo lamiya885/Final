@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Final_CFF.BL.DTOs.SliderDTOs;
+using Final_CFF.BL.Extentions;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.SliderRepository;
@@ -30,9 +31,8 @@ public class SliderService(ISliderRepository _repo) : ISliderService
         {
             Title = dto.Title,
             Subtitle = dto.Subtitle,
-
+            ImageUrl= await dto.Image.UploadAsync()
         };
-
 
         await _repo.AddAsync(slider);
         await _repo.SaveAsync();
@@ -45,7 +45,7 @@ public class SliderService(ISliderRepository _repo) : ISliderService
         var entity = await _repo.GetByIdAsync(id);
         entity.Title = dto.Title;
         entity.Subtitle = dto.Subtitle;
-
+        //entity.ImageUrl=dto.Image
         await _repo.AddAsync(entity);
         await _repo.SaveAsync();
         return entity.Id;

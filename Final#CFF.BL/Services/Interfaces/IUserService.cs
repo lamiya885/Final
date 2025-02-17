@@ -9,7 +9,7 @@ namespace Final_CFF.BL.Services.Interfaces;
 
 public  interface IUserService
 {
-     Task<string> Create(RegisterDTO DTO);
+     //Task<string> Create(RegisterDTO DTO);
     Task<Guid> Delete(string username);
     Task<bool> Login(LoginDTO DTO);
 }

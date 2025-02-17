@@ -22,7 +22,7 @@ namespace Final_CFF.BL
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
         {
             services.AddFluentValidationAutoValidation();
-            services.AddValidatorsFromAssemblyContaining(typeof(LoginDTO));
+            services.AddValidatorsFromAssemblyContaining(typeof(ServiceRegistration));
             return services;
         }
     }

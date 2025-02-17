@@ -11,11 +11,9 @@ namespace Final_CFF.BL.Validators.AuthValidators;
 
 public class LoginDTOValidator : AbstractValidator<LoginDTO>
 {
-    private readonly IUserService _service;
-    public LoginDTOValidator(IUserService service)
+    
+    public LoginDTOValidator()
     {
-        _service = service;
-
         RuleFor(x => x.UserNameOrUserEmail)
             .NotNull()
             .NotEmpty();

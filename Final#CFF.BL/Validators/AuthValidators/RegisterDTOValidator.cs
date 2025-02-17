@@ -11,10 +11,10 @@ namespace Final_CFF.BL.Validators.AuthValidators
 {
     public class RegisterDTOValidator : AbstractValidator<RegisterDTO>
     {
-        private readonly IUserService _userService;
-        public RegisterDTOValidator(IUserService userService)
+        
+        public RegisterDTOValidator()
         {
-            _userService = userService;
+           
 
             RuleFor(r => r.FullName)
                 .NotNull()

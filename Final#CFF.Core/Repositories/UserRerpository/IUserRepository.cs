@@ -7,10 +7,10 @@ using Final_CFF.Core.Entity;
 
 namespace Final_CFF.Core.Repositories.UserRerpository;
 
-public interface IUserRepository:IGenericRepository<User>
-{
-    User GetCurrentUser();
-    Guid GetCurrentUserId();
-    string GetCurrentUserName();
-    Task<User> GetByUserName(string username);
-}
+//public interface IUserRepository:IGenericRepository<User>
+//{
+//    User GetCurrentUser();
+//    Guid GetCurrentUserId();
+//    string GetCurrentUserName();
+//    Task<User> GetByUserName(string username);
+//}

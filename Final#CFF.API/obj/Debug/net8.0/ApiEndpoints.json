@@ -64,18 +64,8 @@
   },
   {
     "ContainingType": "Final_CFF.API.Controllers.SlidersController",
-    "Method": "Get",
-    "RelativePath": "api/Sliders",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Final_CFF.API.Controllers.SlidersController",
     "Method": "Create",
-    "RelativePath": "api/Sliders",
+    "RelativePath": "api/Sliders/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -101,7 +91,7 @@
   {
     "ContainingType": "Final_CFF.API.Controllers.SlidersController",
     "Method": "Delete",
-    "RelativePath": "api/Sliders",
+    "RelativePath": "api/Sliders/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -112,6 +102,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.SlidersController",
+    "Method": "Get",
+    "RelativePath": "api/Sliders/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

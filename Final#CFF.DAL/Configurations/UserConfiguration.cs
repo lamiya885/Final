@@ -18,19 +18,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired();
         builder.Property(u => u.UserName)
             .IsRequired();
-        builder.Property(u => u.UserEmail)
-            .IsRequired();
         builder.Property(u => u.PasswordHash)
             .IsRequired();
-        builder.Property(u => u.Image)
+        builder.Property(u => u.ImageUrl)
             .IsRequired();
-        builder.Property(u => u.IsEmailConfirmed)
-            .HasDefaultValue(false);
-        builder.Property(u => u.Role)
-            .HasDefaultValue((int)Roles.Resident);
-
-
-
 
         builder.HasOne(u => u.Apartment)
             .WithMany(u => u.Users)

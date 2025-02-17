@@ -1,11 +1,13 @@
 
 using Final_CFF.BL;
 using Final_CFF.BL.Exceptions;
+using Final_CFF.Core.Entity;
 using Final_CFF.DAL;
 using Final_CFF.DAL.Context;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using MongoDB.Driver.Core.Misc;
@@ -22,9 +24,10 @@ namespace Final_CFF.API
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<FinalDbContext>(option =>
-            option.UseSqlServer(
-                builder.Configuration.GetConnectionString("MSSQL"))
-            );
+            {
+                option.UseSqlServer(
+                builder.Configuration.GetConnectionString("MSSQL"));
+            });
             builder.Services.AddRepositories();
             builder.Services.AddServices();
             builder.Services.AddFluentValidation();
@@ -32,6 +35,16 @@ namespace Final_CFF.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddIdentity<User, IdentityRole>(opt =>
+            {
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireDigit = false;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireUppercase = false;
+                opt.Lockout.MaxFailedAccessAttempts = 1;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(2);
+
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<FinalDbContext>();
 
             var app = builder.Build();
 

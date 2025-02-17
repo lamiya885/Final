@@ -15,7 +15,7 @@ public class RegisterDTO
     public string Email { get; set; }
     [DataType(DataType.Password)]
     public string Password { get; set; }
-    [DataType(DataType.Password)]
+    [DataType(DataType.Password), Compare("Password", ErrorMessage = "Passwords do not match.")]
     public string Repassword { get; set; }
     public IFormFile Image { get; set; }    
 

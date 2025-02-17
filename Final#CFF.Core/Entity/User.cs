@@ -5,20 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Final_CFF.Core.Entity.Common;
 using Final_CFF.Core.Enums;
+using Microsoft.AspNetCore.Identity;
 
 namespace Final_CFF.Core.Entity;
 
-public class User : BaseEntity
+public class User : IdentityUser
 {
-    public string UserName { get; set; }
+    
     public string FullName { get; set; }
-    public string UserEmail { get; set; }
-    public string Image { get; set; }
-    public string PasswordHash { get; set; }
-    public bool IsEmailConfirmed { get; set; }
-    public int Role { get; set; }
-    public bool IsBanned { get; set; }
-    public DateTime? UnlockTime { get; set; }
+    public string ImageUrl { get; set; }
     public Guid ApertmentId { get; set; }
     public Apartment Apartment { get; set; }
 }
