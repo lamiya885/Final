@@ -9,48 +9,52 @@ using Final_CFF.BL.Helpers;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.UserRerpository;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class AuthService(UserManager<User> _userManager,SignInManager<User>) : IAuthService
+public class AuthService(UserManager<User> _userManager,
+    SignInManager<User> _signInManager) : IAuthService
 {
     public async Task<string> LoginAsync(LoginDTO DTO)
     {
-        var user = await _repo.GetAll()
-            .Where(x => x.UserEmail == DTO.UserNameOrUserEmail || x.UserEmail == DTO.UserNameOrUserEmail).FirstOrDefaultAsync();
-        return HashHelper.VerifyHashedPassword(user.PasswordHash, DTO.Password).ToString();
+        User user = null;
+        if (DTO.UserNameOrUserEmail.Contains('@'))
+        {
+            user = await _userManager.FindByEmailAsync(DTO.UserNameOrUserEmail);
+        }
+        else
+        {
+            user = await _userManager.FindByNameAsync(DTO.UserNameOrUserEmail);
+        }
+
+        await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
     }
 
     public async Task RegisterAsync(RegisterDTO DTO)
     {
-
-        var user = await _repo.GetAll()
-            .Where(x => x.UserEmail == DTO.UserName || x.UserEmail == DTO.Email).FirstOrDefaultAsync();
-        if (user is null)
+        User user = new User
         {
-            if (user.UserName == DTO.UserName)
-            {
-                throw new ExistException("User Name already using ");
-            }
-            else
-            {
-                throw new ExistException("Email already using");
-            }
-            var entity = new User()
-            {
-                UserName = DTO.UserName,
-                UserEmail = DTO.Email,
-                FullName = DTO.FullName,
+            Email = DTO.Email,
+            FullName = DTO.FullName,
+            UserName = DTO.UserName
+        };
+        var result = await _userManager.CreateAsync(user, DTO.Password);
 
-            };
-
-
-            await _repo.AddAsync(entity);
-            await _repo.SaveAsync();
-
-
-        }
+        //if(!result.Succeeded)
+        //{
+        //    foreach(var error in result.Errors)
+        //    {
+        //        ModelState.AddModelError("",error.Description);
+        //    }
+        //}
+    }
+    [Authorize]
+    public async Task LogOut()
+    {
+        await _signInManager.SignOutAsync();
     }
 }

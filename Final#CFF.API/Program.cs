@@ -37,6 +37,7 @@ namespace Final_CFF.API
             builder.Services.AddSwaggerGen();
             builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
+                opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._";
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;
