@@ -9,8 +9,9 @@ namespace Final_CFF.BL.Services.Interfaces
 {
     public interface IAuthService
     {
-        Task<string> LoginAsync(LoginDTO DTO);
-        Task RegisterAsync(RegisterDTO DTO);
-
+        Task LoginAsync(LoginDTO DTO);
+        Task<string> RegisterAsync(RegisterDTO DTO);
+        Task LogOut();
+        //Task ForgotPassword(string Email);
     }
 }

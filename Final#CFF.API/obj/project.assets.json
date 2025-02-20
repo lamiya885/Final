@@ -5396,6 +5396,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Final#CFF.BL >= 1.0.0",
+      "FluentValidation >= 11.11.0",
       "Microsoft.EntityFrameworkCore >= 8.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.12",
@@ -5459,6 +5460,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.11.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.12, )"

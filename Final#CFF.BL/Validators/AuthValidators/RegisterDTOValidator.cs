@@ -11,11 +11,8 @@ namespace Final_CFF.BL.Validators.AuthValidators
 {
     public class RegisterDTOValidator : AbstractValidator<RegisterDTO>
     {
-        
         public RegisterDTOValidator()
         {
-           
-
             RuleFor(r => r.FullName)
                 .NotNull()
                 .NotEmpty()

@@ -172,5 +172,6 @@ C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\ZstdSharp.dll
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Final#CFF.API.staticwebassets.runtime.json
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

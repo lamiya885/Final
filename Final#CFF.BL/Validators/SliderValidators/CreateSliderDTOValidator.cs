@@ -11,10 +11,8 @@ namespace Final_CFF.BL.Validators.SliderValidators;
 
 public class CreateSliderDTOValidator:AbstractValidator<CreateSliderDTO>
 {
-    private readonly ISliderService _service;
-    public CreateSliderDTOValidator(ISliderService service)
+    public CreateSliderDTOValidator()
     {
-        _service = service;
 
         RuleFor(c => c.Title)
             .NotNull()

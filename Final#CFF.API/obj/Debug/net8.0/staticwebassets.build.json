@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "OipYiGxtSmvUHr/UzgBiq0cngErQYZik59x0xxzrttY=",
+  "Hash": "LC0XXzfXVtQ33HhmczHhU6BK08mL8Cxggx+sWBxuPSQ=",
   "Source": "Final#CFF.API",
   "BasePath": "_content/Final#CFF.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Final#CFF.API\\wwwroot",
+      "Source": "Final#CFF.API",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\",
+      "BasePath": "_content/Final#CFF.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

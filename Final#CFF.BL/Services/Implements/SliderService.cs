@@ -8,10 +8,12 @@ using Final_CFF.BL.Extentions;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.SliderRepository;
+using Microsoft.AspNetCore.Hosting;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class SliderService(ISliderRepository _repo) : ISliderService
+public class SliderService(ISliderRepository _repo, IWebHostEnvironment _env) : ISliderService
 {
     public async Task<IEnumerable<SliderGetDTO>> GatAllAsync()
     {
@@ -21,9 +23,7 @@ public class SliderService(ISliderRepository _repo) : ISliderService
         {
             Title = x.Title,
             Subtitle = x.Subtitle,
-           //Image=x.ImageUrl.UploadAsync
         });
-
     }
     public async Task<Guid> CreateAsync(CreateSliderDTO dto)
     {
@@ -33,6 +33,7 @@ public class SliderService(ISliderRepository _repo) : ISliderService
             Subtitle = dto.Subtitle,
             ImageUrl= await dto.Image.UploadAsync()
         };
+        slider.ImageUrl = await dto.Image!.UploadAsync(_env.WebRootPath, "img", "slider");
 
         await _repo.AddAsync(slider);
         await _repo.SaveAsync();
@@ -45,7 +46,11 @@ public class SliderService(ISliderRepository _repo) : ISliderService
         var entity = await _repo.GetByIdAsync(id);
         entity.Title = dto.Title;
         entity.Subtitle = dto.Subtitle;
-        //entity.ImageUrl=dto.Image
+        string path = Path.Combine(_env.WebRootPath, "img", "slider", entity.ImageUrl);
+        using (Stream stream = System.IO.File.Create(path))
+        {
+            await dto.Image!.CopyToAsync(stream);
+        }
         await _repo.AddAsync(entity);
         await _repo.SaveAsync();
         return entity.Id;

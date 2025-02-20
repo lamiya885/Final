@@ -10,11 +10,8 @@ namespace Final_CFF.BL.Validators.SliderValidators;
 
 public class SliderGetDTOValidator:AbstractValidator<SliderGetDTO>
 {
-    private readonly SliderGetDTO _sliderGetDTO;
-    public SliderGetDTOValidator(SliderGetDTO sliderGetDTO)
+    public SliderGetDTOValidator()
     {
-        _sliderGetDTO = sliderGetDTO;
-
         RuleFor(g => g.Title)
           .NotNull()
           .NotEmpty()

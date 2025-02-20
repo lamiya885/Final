@@ -1,6 +1,7 @@
 
 using Final_CFF.BL;
 using Final_CFF.BL.Exceptions;
+using Final_CFF.BL.Helpers;
 using Final_CFF.Core.Entity;
 using Final_CFF.DAL;
 using Final_CFF.DAL.Context;
@@ -30,7 +31,7 @@ namespace Final_CFF.API
             });
             builder.Services.AddRepositories();
             builder.Services.AddServices();
-            builder.Services.AddFluentValidation();
+        
             builder.Services.AddMemoryCache();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -46,6 +47,8 @@ namespace Final_CFF.API
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(2);
 
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<FinalDbContext>();
+            SmtpOptions opt = new();
+            builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("smtp"));
 
             var app = builder.Build();
 
@@ -56,34 +59,34 @@ namespace Final_CFF.API
                 app.UseSwaggerUI();
             }
 
-            //app.UseExceptionHandler(
-            //    opt =>
-            //    {
-            //        opt.Run(async context =>
-            //        {
-            //            var feature = context.Features.GetRequiredFeature<ExceptionHandlerFeature>();
-            //            var exception = feature.Error;
-            //            if (exception is IBaseException bEx)
-            //            {
-            //                context.Response.StatusCode = bEx.StatusCode;
-            //                await context.Response.WriteAsJsonAsync(new
-            //                {
-            //                    Message = bEx.ErrorMessage
-            //                });
+            app.UseExceptionHandler(
+                opt =>
+                {
+                    opt.Run(async context =>
+                    {
+                        var feature = context.Features.GetRequiredFeature<ExceptionHandlerFeature>();
+                        var exception = feature.Error;
+                        if (exception is IBaseException bEx)
+                        {
+                            context.Response.StatusCode = bEx.StatusCode;
+                            await context.Response.WriteAsJsonAsync(new
+                            {
+                                Message = bEx.ErrorMessage
+                            });
 
-            //            }
-            //            else
-            //            {
-            //                context.Response.StatusCode = 400;
-            //                await context.Response.WriteAsJsonAsync(new
-            //                {
-            //                    Message = "Bir xeta bas verdi!"
-            //                });
-            //            }
-            //        }
-            //            );
-            //    }
-            //);
+                        }
+                        else
+                        {
+                            context.Response.StatusCode = 400;
+                            await context.Response.WriteAsJsonAsync(new
+                            {
+                                Message = "Bir xeta bas verdi!"
+                            });
+                        }
+                    }
+                        );
+                }
+            );
 
             app.UseHttpsRedirection();
 

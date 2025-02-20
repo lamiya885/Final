@@ -10,6 +10,12 @@ namespace Final_CFF.BL.Validators.Building
 {
     public class CreateBuildingDTOValidator:AbstractValidator<CreateBuildingDTO>
     {
-
+        public CreateBuildingDTOValidator()
+        {
+        RuleFor(c => c.BuildingName)
+            .NotNull()
+            .NotEmpty()
+            .WithMessage("Building Name is required");
+        }
     }
 }
