@@ -15,5 +15,6 @@ public class User : IdentityUser
     public string FullName { get; set; }
     public string ImageUrl { get; set; }
     public Guid ApertmentId { get; set; }
+    public int ApartmentNo { get; set; }
     public Apartment Apartment { get; set; }
 }

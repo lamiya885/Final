@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Final_CFF.Core.Repositories.ApartmentRepository;
 using Final_CFF.Core.Repositories.BuildingRepository;
 using Final_CFF.Core.Repositories.SliderRepository;
 using Final_CFF.DAL.Repositories;
@@ -16,6 +17,7 @@ namespace Final_CFF.DAL
         {
             services.AddScoped<ISliderRepository, SliderRepository>();
             services.AddScoped<IBuildingRepository, BuildingRepository>();
+            services.AddScoped<IApartmentRepository, ApartmentRepoitory>();
             //services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }

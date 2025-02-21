@@ -1,8 +1,10 @@
 ﻿using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Exceptions.Common;
+using Final_CFF.BL.Extentions;
 using Final_CFF.BL.Helpers;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
+using Final_CFF.DAL.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -10,7 +12,7 @@ using Microsoft.Extensions.Options;
 namespace Final_CFF.BL.Services.Implements;
 
 public class AuthService(UserManager<User> _userManager,
-    SignInManager<User> _signInManager,IOptions<SmtpOptions> option) :IAuthService
+    SignInManager<User> _signInManager, IOptions<SmtpOptions> option, FinalDbContext _context) : IAuthService
 {
     private readonly SmtpOptions _smtpOptions = option.Value;
     public async Task LoginAsync(LoginDTO DTO)
@@ -25,33 +27,47 @@ public class AuthService(UserManager<User> _userManager,
             user = await _userManager.FindByNameAsync(DTO.UserNameOrUserEmail);
         }
 
-       var result= await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
+        var result = await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
         if (!result.Succeeded)
             throw new NotFoundException<User>();
-      
+
     }
     public async Task<string> RegisterAsync(RegisterDTO DTO)
     {
         if (await _userManager.Users.AnyAsync(x => x.Email == DTO.Email))
         {
-            throw new ExistException<User>();
+            throw new Exception();
+            //throw new ExistException<User>();
         }
-        else if (await _userManager.Users.AnyAsync(x => x.UserName == DTO.UserName))
+        if (await _userManager.Users.AnyAsync(x => x.UserName == DTO.UserName))
         {
-            throw new ExistException<User>();
+            throw new Exception();
+            //throw new ExistException<User>();
         }
         User user = new User
         {
             Email = DTO.Email,
             FullName = DTO.FullName,
-            UserName = DTO.UserName
+            ApartmentNo=DTO.ApartmentNo,
+            UserName = DTO.UserName,
+            ImageUrl =await  DTO.Image.UploadAsync()
         };
+
+
         var result = await _userManager.CreateAsync(user, DTO.Password);
-        if (result.Succeeded)
+        if (!result.Succeeded)
         {
-            return "User registered successfully";
+            string errors = string.Join(", ", result.Errors.Select(e => e.Description));
+            return $"User was not registered successfully: {errors}";
         }
-        return "User  was not registered successfully";
+
+        await _context.SaveChangesAsync();
+        return "User registered successfully";
+        //if (result.Succeeded)
+        //{
+        //    return "User registered successfully";
+        //}
+        //return "User  was not registered successfully";
     }
     public async Task LogOut()
     {
@@ -83,8 +99,8 @@ public class AuthService(UserManager<User> _userManager,
     //    smtp.Send(msg);
 
     //}
-   
-    
+
+
     //public Task ResetPassword(string Password)
     //{
     //    var user = await _usermanager.FindByEmailAsync(vm.Email);

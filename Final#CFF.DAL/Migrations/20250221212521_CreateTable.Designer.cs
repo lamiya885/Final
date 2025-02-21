@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Final_CFF.DAL.Migrations
 {
     [DbContext(typeof(FinalDbContext))]
-    [Migration("20250217124100_table")]
-    partial class table
+    [Migration("20250221212521_CreateTable")]
+    partial class CreateTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,7 @@ namespace Final_CFF.DAL.Migrations
 
                     b.HasIndex("BuildingId");
 
-                    b.ToTable("Residents");
+                    b.ToTable("Apartments");
                 });
 
             modelBuilder.Entity("Final_CFF.Core.Entity.Building", b =>
@@ -326,6 +326,9 @@ namespace Final_CFF.DAL.Migrations
             modelBuilder.Entity("Final_CFF.Core.Entity.User", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<int>("ApartmentNo")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("ApertmentId")
                         .HasColumnType("uniqueidentifier");

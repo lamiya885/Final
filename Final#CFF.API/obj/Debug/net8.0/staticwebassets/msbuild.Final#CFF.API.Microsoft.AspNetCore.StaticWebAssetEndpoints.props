@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/0yyea2aj.pow7nv0fos.u3z">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0yyea2aj.u3z'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pow7nv0fos"},{"Name":"integrity","Value":"sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="},{"Name":"label","Value":"_content/Final#CFF.API/img/slider/0yyea2aj.u3z"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"669492"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Feb 2025 19:28:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/0yyea2aj.u3z">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0yyea2aj.u3z'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"669492"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Feb 2025 19:28:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

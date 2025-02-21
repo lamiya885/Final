@@ -51,7 +51,7 @@ namespace Final_CFF.DAL.Migrations
 
                     b.HasIndex("BuildingId");
 
-                    b.ToTable("Residents");
+                    b.ToTable("Apartments");
                 });
 
             modelBuilder.Entity("Final_CFF.Core.Entity.Building", b =>
@@ -323,6 +323,9 @@ namespace Final_CFF.DAL.Migrations
             modelBuilder.Entity("Final_CFF.Core.Entity.User", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<int>("ApartmentNo")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("ApertmentId")
                         .HasColumnType("uniqueidentifier");

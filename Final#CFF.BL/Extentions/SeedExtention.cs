@@ -28,18 +28,18 @@ public static class SeedExtention
                     roleManager.CreateAsync(new IdentityRole(item.ToString())).Wait();
                 }
             }
-            //if (!userManager.Users.Any(x => x.NormalizedUserName=="ADMIN"))
-            //{
-            //    User user = new User()
-            //    {
-            //        FullName = "admin",
-            //        UserName = "admin",
-            //        UserEmail = "admin@gmail.com",
-            //        Image = "photo.jpg"
-            //    };
-            //    userManager.CreateAsync(user,"1234").Wait();
-            //    userManager.AddToRoleAsync(user,nameof(Roles.Admin)).Wait();
-            //}
+            if (!userManager.Users.Any(x => x.NormalizedUserName == "ADMIN"))
+            {
+                User user = new User()
+                {
+                    FullName = "admin",
+                    UserName = "admin",
+                    Email = "admin@gmail.com",
+                    ImageUrl = "photo.jpg"
+                };
+                userManager.CreateAsync(user, "1234").Wait();
+                userManager.AddToRoleAsync(user, nameof(Roles.Admin)).Wait();
+            }
         }
     }
 }

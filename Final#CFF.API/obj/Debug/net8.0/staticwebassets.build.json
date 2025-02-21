@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LC0XXzfXVtQ33HhmczHhU6BK08mL8Cxggx+sWBxuPSQ=",
+  "Hash": "ECdtd7kbQqtYOeaCrZf+OODO4QUGq6a8dC0ZqRH9RHk=",
   "Source": "Final#CFF.API",
   "BasePath": "_content/Final#CFF.API",
   "Mode": "Default",
@@ -15,6 +15,111 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
+      "SourceId": "Final#CFF.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\",
+      "BasePath": "_content/Final#CFF.API",
+      "RelativePath": "img/slider/0yyea2aj#[.{fingerprint}]?.u3z",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pow7nv0fos",
+      "Integrity": "x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\0yyea2aj.u3z"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "img/slider/0yyea2aj.pow7nv0fos.u3z",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 19:28:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pow7nv0fos"
+        },
+        {
+          "Name": "label",
+          "Value": "img/slider/0yyea2aj.u3z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="
+        }
+      ]
+    },
+    {
+      "Route": "img/slider/0yyea2aj.u3z",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 19:28:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="
+        }
+      ]
+    }
+  ]
 }

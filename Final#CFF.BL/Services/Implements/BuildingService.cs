@@ -38,7 +38,7 @@ namespace Final_CFF.BL.Services.Implements
 
             entity.BuildingName = DTO.BuildingName;
 
-            await _repo.AddAsync(entity);
+            //await _repo.AddAsync(entity);
             await _repo.SaveAsync();
             return entity.Id;
         }

@@ -11,6 +11,7 @@ namespace Final_CFF.BL.DTOs.Auth;
 public class RegisterDTO
 {
     public string FullName {  get; set; }
+    public int ApartmentNo { get; set; }
     public string UserName { get; set; }
     public string Email { get; set; }
     [DataType(DataType.Password)]

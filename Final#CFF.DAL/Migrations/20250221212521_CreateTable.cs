@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Final_CFF.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class table : Migration
+    public partial class CreateTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -79,7 +79,7 @@ namespace Final_CFF.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Residents",
+                name: "Apartments",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -92,9 +92,9 @@ namespace Final_CFF.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Residents", x => x.Id);
+                    table.PrimaryKey("PK_Apartments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Residents_Buildings_BuildingId",
+                        name: "FK_Apartments_Buildings_BuildingId",
                         column: x => x.BuildingId,
                         principalTable: "Buildings",
                         principalColumn: "Id",
@@ -110,6 +110,7 @@ namespace Final_CFF.DAL.Migrations
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ApertmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    ApartmentNo = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -129,9 +130,9 @@ namespace Final_CFF.DAL.Migrations
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_Residents_ApertmentId",
+                        name: "FK_AspNetUsers_Apartments_ApertmentId",
                         column: x => x.ApertmentId,
-                        principalTable: "Residents",
+                        principalTable: "Apartments",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -222,6 +223,11 @@ namespace Final_CFF.DAL.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Apartments_BuildingId",
+                table: "Apartments",
+                column: "BuildingId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
                 column: "RoleId");
@@ -264,11 +270,6 @@ namespace Final_CFF.DAL.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Residents_BuildingId",
-                table: "Residents",
-                column: "BuildingId");
         }
 
         /// <inheritdoc />
@@ -299,7 +300,7 @@ namespace Final_CFF.DAL.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Residents");
+                name: "Apartments");
 
             migrationBuilder.DropTable(
                 name: "Buildings");

@@ -1,0 +1,22 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0yyea2aj.u3z'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final#CFF.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final#CFF.API</BasePath>
+      <RelativePath>img/slider/0yyea2aj.u3z</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pow7nv0fos</Fingerprint>
+      <Integrity>x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0yyea2aj.u3z'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

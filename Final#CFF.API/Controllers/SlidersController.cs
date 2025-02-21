@@ -22,7 +22,12 @@ namespace Final_CFF.API.Controllers
             await _service.CreateAsync(DTO);
             return Ok(DTO);
         }
-
+        [HttpPost]
+        public async Task<IActionResult> Update(Guid id,UpdateSliderDTO DTO)
+        {
+            await _service.UpdateAsync(DTO,id);
+            return Ok(DTO);
+        }
         [HttpDelete]
         public async Task<IActionResult> Delete(Guid id)
         {

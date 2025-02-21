@@ -15,8 +15,10 @@ namespace Final_CFF.BL
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
+            services.AddScoped<IApartmentService, ApartmentService>();
             services.AddScoped<IBuildingService, BuildingService>();
             services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IAuthService, AuthService>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
