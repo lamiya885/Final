@@ -1,4 +1,5 @@
-﻿using Final_CFF.BL.DTOs.Auth;
+﻿using System.Text;
+using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Exceptions.Common;
 using Final_CFF.BL.Extentions;
 using Final_CFF.BL.Helpers;
@@ -12,7 +13,7 @@ using Microsoft.Extensions.Options;
 namespace Final_CFF.BL.Services.Implements;
 
 public class AuthService(UserManager<User> _userManager,
-    SignInManager<User> _signInManager, IOptions<SmtpOptions> option, FinalDbContext _context) : IAuthService
+    SignInManager<User> _signInManager, IOptions<SmtpOptions> option,IEmailService _emailService) : IAuthService
 {
     private readonly SmtpOptions _smtpOptions = option.Value;
     public async Task LoginAsync(LoginDTO DTO)
@@ -29,7 +30,16 @@ public class AuthService(UserManager<User> _userManager,
 
         var result = await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
         if (!result.Succeeded)
-            throw new NotFoundException<User>();
+        {
+            if (result.IsLockedOut)
+            {
+                throw new Exception("Wait untill" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+            }
+            if(result.IsNotAllowed)
+            {
+                throw new Exception("Please confirm your email. If you have confirmed your email ,UserName or Email is incorrect!");
+            }
+        }
 
     }
     public async Task<string> RegisterAsync(RegisterDTO DTO)
@@ -60,8 +70,8 @@ public class AuthService(UserManager<User> _userManager,
             string errors = string.Join(", ", result.Errors.Select(e => e.Description));
             return $"User was not registered successfully: {errors}";
         }
-
-        await _context.SaveChangesAsync();
+        string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+        _emailService.SendEmailConfirmationAsync(user.Email,user.UserName,token);
         return "User registered successfully";
         //if (result.Succeeded)
         //{
@@ -72,6 +82,16 @@ public class AuthService(UserManager<User> _userManager,
     public async Task LogOut()
     {
         await _signInManager.SignOutAsync();
+    }
+    public async Task VerifyEmail(string token,string user)
+    {
+        var entity= await _userManager.FindByNameAsync(user);
+        var result= await _userManager.ConfirmEmailAsync(entity, token.Replace(' ','+'));
+        if (!result.Succeeded)
+        {
+            string errors = string.Join(", ", result.Errors.Select(e => e.Description));
+        }
+        await _signInManager.SignInAsync(entity, true);
     }
     //public async Task ForgotPassword(string Email)
     //{

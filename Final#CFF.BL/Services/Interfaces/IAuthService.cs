@@ -12,6 +12,7 @@ namespace Final_CFF.BL.Services.Interfaces
         Task LoginAsync(LoginDTO DTO);
         Task<string> RegisterAsync(RegisterDTO DTO);
         Task LogOut();
+        Task VerifyEmail(string token, string user);
         //Task ForgotPassword(string Email);
     }
 }

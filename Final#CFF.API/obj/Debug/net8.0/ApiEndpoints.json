@@ -1,8 +1,71 @@
 [
   {
+    "ContainingType": "Final_CFF.API.Controllers.ApartmentsController",
+    "Method": "Create",
+    "RelativePath": "api/Apartments/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DTO",
+        "Type": "Final_CFF.BL.DTOs.AparmentDTOs.CreateApartmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.ApartmentsController",
+    "Method": "Delete",
+    "RelativePath": "api/Apartments/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.ApartmentsController",
+    "Method": "Get",
+    "RelativePath": "api/Apartments/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.ApartmentsController",
+    "Method": "Update",
+    "RelativePath": "api/Apartments/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "DTO",
+        "Type": "Final_CFF.BL.DTOs.AparmentDTOs.UpdateApartmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Final_CFF.API.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "api/Auth/Login/Login",
+    "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +81,7 @@
   {
     "ContainingType": "Final_CFF.API.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth/Register/Register",
+    "RelativePath": "api/Auth/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -29,8 +92,8 @@
         "IsRequired": false
       },
       {
-        "Name": "ApartmentId",
-        "Type": "System.Guid",
+        "Name": "ApartmentNo",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {

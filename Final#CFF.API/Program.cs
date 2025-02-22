@@ -39,6 +39,8 @@ namespace Final_CFF.API
             builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._";
+                opt.User.RequireUniqueEmail = true;
+                opt.SignIn.RequireConfirmedEmail = true;
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;
@@ -48,7 +50,7 @@ namespace Final_CFF.API
 
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<FinalDbContext>();
             SmtpOptions opt = new();
-            builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("smtp"));
+            builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection(SmtpOptions.Name));
 
             var app = builder.Build();
 

@@ -19,6 +19,7 @@ namespace Final_CFF.BL
             services.AddScoped<IBuildingService, BuildingService>();
             services.AddScoped<ISliderService, SliderService>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IEmailService, EmailService>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)

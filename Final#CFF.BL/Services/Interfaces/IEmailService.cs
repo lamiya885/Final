@@ -8,7 +8,7 @@ namespace Final_CFF.BL.Services.Interfaces
 {
     public  interface IEmailService
     {
-        Task SendAsync();
+        void SendEmailConfirmationAsync(string reciver,string name,string token);
 
     }
 }

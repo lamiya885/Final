@@ -5,7 +5,113 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Auth/Register/Register": {
+    "/api/Apartments/Get": {
+      "get": {
+        "tags": [
+          "Apartments"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Apartments/Create": {
+      "post": {
+        "tags": [
+          "Apartments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateApartmentDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateApartmentDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateApartmentDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Apartments/Update": {
+      "post": {
+        "tags": [
+          "Apartments"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateApartmentDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateApartmentDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateApartmentDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Apartments/Delete": {
+      "delete": {
+        "tags": [
+          "Apartments"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/Register": {
       "post": {
         "tags": [
           "Auth"
@@ -19,11 +125,11 @@
             }
           },
           {
-            "name": "ApartmentId",
+            "name": "ApartmentNo",
             "in": "query",
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "integer",
+              "format": "int32"
             }
           },
           {
@@ -84,7 +190,7 @@
         }
       }
     },
-    "/api/Auth/Login/Login": {
+    "/api/Auth/Login": {
       "post": {
         "tags": [
           "Auth"
@@ -362,6 +468,20 @@
   },
   "components": {
     "schemas": {
+      "CreateApartmentDTO": {
+        "type": "object",
+        "properties": {
+          "no": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "buildingName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateBuildingDTO": {
         "type": "object",
         "properties": {
@@ -386,6 +506,20 @@
           },
           "rememberMe": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateApartmentDTO": {
+        "type": "object",
+        "properties": {
+          "no": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "buildingName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
