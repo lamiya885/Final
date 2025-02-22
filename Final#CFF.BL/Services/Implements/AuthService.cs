@@ -73,11 +73,6 @@ public class AuthService(UserManager<User> _userManager,
         string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
         _emailService.SendEmailConfirmationAsync(user.Email,user.UserName,token);
         return "User registered successfully";
-        //if (result.Succeeded)
-        //{
-        //    return "User registered successfully";
-        //}
-        //return "User  was not registered successfully";
     }
     public async Task LogOut()
     {
@@ -98,8 +93,6 @@ public class AuthService(UserManager<User> _userManager,
     //    var user = await _userManager.FindByEmailAsync(Email);
 
     //    var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-    //    var frontendUrl = "https://yourfrontend.com/reset-password";
-    //    var resetLink = $"{frontendUrl}?token={token}&email={user.Email}";
     //    SmtpClient smtp = new SmtpClient
     //    {
     //        Host = _smtpOptions.Host,
@@ -108,7 +101,7 @@ public class AuthService(UserManager<User> _userManager,
     //        Credentials = new NetworkCredential(_smtpOptions.Username, _smtpOptions.Password)
     //    };
 
-    //    MailMessage msg = new MailMessage
+    //    MailMessage message = new MailMessage
     //    {
     //        From = new MailAddress(_smtpOptions.Username, ""),
     //        Subject = "Reset Password",
@@ -116,7 +109,7 @@ public class AuthService(UserManager<User> _userManager,
     //        IsBodyHtml = true
     //    };
 
-    //    smtp.Send(msg);
+    //    smtp.Send(message);
 
     //}
 
@@ -129,8 +122,8 @@ public class AuthService(UserManager<User> _userManager,
     //        throw new NotFoundException<User>();
     //    }
 
-    //    var resetPassResult = await _usermanager.ResetPasswordAsync(user, vm.Token, vm.NewPassword);
-    //    if (resetPassResult.Succeeded)
+    //    var resetPasswordResult = await _usermanager.ResetPasswordAsync(user, vm.Token, vm.NewPassword);
+    //    if (resetPasswordResult.Succeeded)
     //    {
     //        return Ok("Everything was successfully completed");
     //    }

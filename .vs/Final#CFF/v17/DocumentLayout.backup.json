@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\Final#CFF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|solutionrelative:final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|solutionrelative:final#cff.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{383AD811-927A-4865-9257-0F5D697DCD9C}|Final#CFF.API\\Final#CFF.API.csproj|solutionrelative:final#cff.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\helpers\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\helpers\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.dal\\repositories\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{916805E8-8316-415C-A913-E1D805BB2499}|Final#CFF.DAL\\Final#CFF.DAL.csproj|solutionrelative:final#cff.dal\\repositories\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|solutionrelative:final#cff.bl\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D6A431-9A97-4C11-B4E5-DF5568312F7E}|Final#CFF.BL\\Final#CFF.BL.csproj|c:\\users\\hp\\source\\repos\\final#cff\\final#cff.bl\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,11 +98,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "StripeService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\StripeService.cs",
+              "RelativeDocumentMoniker": "Final#CFF.BL\\StripeService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\StripeService.cs",
+              "RelativeToolTip": "Final#CFF.BL\\StripeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:34:21.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Final#CFF.DAL\\ServiceRegistration.cs",
@@ -115,33 +128,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Final#CFF.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Final#CFF.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAADAZWZmZmYcwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T09:23:48.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "EmailTemplates.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Helpers\\EmailTemplates.cs",
               "RelativeDocumentMoniker": "Final#CFF.BL\\Helpers\\EmailTemplates.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Helpers\\EmailTemplates.cs",
               "RelativeToolTip": "Final#CFF.BL\\Helpers\\EmailTemplates.cs",
-              "ViewState": "AgIAAKIAAACACM3MzMwXwLkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAACAcjMzM7MSwLkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T08:42:37.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\Program.cs",
               "RelativeDocumentMoniker": "Final#CFF.API\\Program.cs",
@@ -154,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SmtpOptions.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Helpers\\SmtpOptions.cs",
               "RelativeDocumentMoniker": "Final#CFF.BL\\Helpers\\SmtpOptions.cs",
@@ -167,20 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BuildingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\BuildingRepository.cs",
-              "RelativeDocumentMoniker": "Final#CFF.DAL\\Repositories\\BuildingRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.DAL\\Repositories\\BuildingRepository.cs",
-              "RelativeToolTip": "Final#CFF.DAL\\Repositories\\BuildingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:27:13.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Interfaces\\IAuthService.cs",
@@ -193,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Final#CFF.BL\\ServiceRegistration.cs",
@@ -212,14 +212,14 @@
               "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\AuthService.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\AuthService.cs",
               "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\AuthService.cs",
-              "ViewState": "AgIAAFMAAAAgAgAAAIAwwF0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAABg08zMzMwnwEsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T13:59:15.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Services\\Implements\\EmailService.cs",
               "RelativeDocumentMoniker": "Final#CFF.BL\\Services\\Implements\\EmailService.cs",
@@ -240,7 +240,8 @@
               "RelativeToolTip": "Final#CFF.BL\\Services\\Interfaces\\IApartmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:29:57.393Z"
+              "WhenOpened": "2025-02-21T21:29:57.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -265,7 +266,8 @@
               "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\BuildingService.cs",
               "ViewState": "AgIAAAkAAACAMTMzMzMrwBQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T19:22:37.411Z"
+              "WhenOpened": "2025-02-21T19:22:37.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -277,7 +279,8 @@
               "RelativeToolTip": "Final#CFF.BL\\Services\\Implements\\ApartmentService.cs",
               "ViewState": "AgIAAAUAAABAAQAAAAAhwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:55:24.829Z"
+              "WhenOpened": "2025-02-21T21:55:24.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -289,7 +292,8 @@
               "RelativeToolTip": "Final#CFF.Core\\Repositories\\ApartmentRepository\\IApartmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:27:00.261Z"
+              "WhenOpened": "2025-02-21T21:27:00.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -301,7 +305,8 @@
               "RelativeToolTip": "Final#CFF.DAL\\Migrations\\20250221212521_CreateTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:25:21.633Z"
+              "WhenOpened": "2025-02-21T21:25:21.633Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -313,7 +318,8 @@
               "RelativeToolTip": "Final#CFF.API\\Final#CFF.API.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-21T21:20:17.595Z"
+              "WhenOpened": "2025-02-21T21:20:17.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -325,7 +331,8 @@
               "RelativeToolTip": "Final#CFF.BL\\Helpers\\HashHelper.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAASwDMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T17:37:47.785Z"
+              "WhenOpened": "2025-02-21T17:37:47.785Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -337,7 +344,8 @@
               "RelativeToolTip": "Final#CFF.DAL\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAUAAADAZGZmZmYUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:42:53.884Z"
+              "WhenOpened": "2025-02-21T20:42:53.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -349,7 +357,8 @@
               "RelativeToolTip": "Final#CFF.DAL\\Context\\FinalDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T20:52:02.721Z"
+              "WhenOpened": "2025-02-21T20:52:02.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -359,9 +368,10 @@
               "RelativeDocumentMoniker": "Final#CFF.BL\\Extentions\\FileExtention.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.BL\\Extentions\\FileExtention.cs",
               "RelativeToolTip": "Final#CFF.BL\\Extentions\\FileExtention.cs",
-              "ViewState": "AgIAAA8AAACA+v////8XwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAACg/v////80wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T14:11:26.152Z"
+              "WhenOpened": "2025-02-19T14:11:26.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -373,7 +383,8 @@
               "RelativeToolTip": "Final#CFF.API\\Controllers\\SlidersController.cs",
               "ViewState": "AgIAAAYAAACAMjMzMzMrwBsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T19:31:57.422Z"
+              "WhenOpened": "2025-02-21T19:31:57.422Z",
+              "EditorCaption": ""
             }
           ]
         }
