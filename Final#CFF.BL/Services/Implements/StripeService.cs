@@ -16,12 +16,15 @@ using Stripe;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class StripeService(UserManager<User> _userManager, StripeSettings _stripeSettings)
+public class StripeService(UserManager<User> _userManager)
 {
-    public PaymentService(IOptions<StripeSettings> stripeSettings)
+    readonly StripeSettings _stripeSettings;
+    public StripeService(IOptions<StripeSettings> stripeSettings)
     {
+        _stripeSettings = stripeSettings.Value;
         StripeConfiguration.ApiKey = _stripeSettings.SecretKey;
     }
+
     public async Task PaymentIntent(CreatePaymentDTO DTO)
     {
         var options = new CustomerCreateOptions

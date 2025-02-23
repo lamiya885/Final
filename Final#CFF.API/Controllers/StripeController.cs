@@ -11,7 +11,7 @@ namespace Final_CFF.API.Controllers
     [ApiController]
     public class StripeController(IStripeService _service) : ControllerBase
     {
-        private const string WebhookSecret = "Sizin_Webhook_Açarınız";
+        private const string WebhookSecret = "";
         [HttpPost]
         public async Task<IActionResult> HandleWebhook()
         {
@@ -21,11 +21,11 @@ namespace Final_CFF.API.Controllers
                 var stripeSignature = Request.Headers["Stripe-Signature"];
                 var stripeEvent = EventUtility.ConstructEvent(json, stripeSignature, WebhookSecret);
 
-                if (stripeEvent.Type == Events.PaymentIntentSucceeded)
-                {
-                    var paymentIntent = stripeEvent.Data.Object as PaymentIntent;
-                    Console.WriteLine($"Payment was successfully completed! PaymentIntent ID: {paymentIntent.Id}");
-                }
+                //if (stripeEvent.Type == Events.PaymentIntentSucceeded)
+                //{
+                //    var paymentIntent = stripeEvent.Data.Object as PaymentIntent;
+                //    Console.WriteLine($"Payment was successfully completed! PaymentIntent ID: {paymentIntent.Id}");
+                //}
 
                 return Ok();
             }

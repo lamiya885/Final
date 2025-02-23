@@ -28,6 +28,11 @@ namespace Final_CFF.API
 
             // Add services to the container.
 
+            builder.Services.AddDbContext<FinalDbContext>(option =>
+            {
+                option.UseSqlServer(
+                builder.Configuration.GetConnectionString("MSSQL"));
+            });
             builder.Services.AddControllers();
             builder.Services.AddRepositories();
             builder.Services.AddServices();
@@ -67,11 +72,6 @@ namespace Final_CFF.API
             });
 
 
-            builder.Services.AddDbContext<FinalDbContext>(option =>
-            {
-                option.UseSqlServer(
-                builder.Configuration.GetConnectionString("MSSQL"));
-            });
 
             builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
