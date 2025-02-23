@@ -9,6 +9,8 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Services.Implements;
+using Final_CFF.BL.ExternalServices.Abstracts;
+
 namespace Final_CFF.BL
 {
     public static class ServiceRegistration
@@ -20,6 +22,7 @@ namespace Final_CFF.BL
             services.AddScoped<ISliderService, SliderService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ITokenHandler,ITokenHandler>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
@@ -28,5 +31,6 @@ namespace Final_CFF.BL
             services.AddValidatorsFromAssemblyContaining(typeof(ServiceRegistration));
             return services;
         }
+       
     }
 }

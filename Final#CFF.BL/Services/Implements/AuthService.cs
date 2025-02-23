@@ -1,7 +1,10 @@
-﻿using System.Text;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Exceptions.Common;
 using Final_CFF.BL.Extentions;
+using Final_CFF.BL.ExternalServices.Abstracts;
 using Final_CFF.BL.Helpers;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
@@ -9,14 +12,15 @@ using Final_CFF.DAL.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Final_CFF.BL.Services.Implements;
 
 public class AuthService(UserManager<User> _userManager,
-    SignInManager<User> _signInManager, IOptions<SmtpOptions> option,IEmailService _emailService) : IAuthService
+    SignInManager<User> _signInManager, IOptions<SmtpOptions> option, IEmailService _emailService,ITokenHandler _tokenHandler) : IAuthService
 {
     private readonly SmtpOptions _smtpOptions = option.Value;
-    public async Task LoginAsync(LoginDTO DTO)
+    public async Task<string> LoginAsync(LoginDTO DTO)
     {
         User user = null;
         if (DTO.UserNameOrUserEmail.Contains('@'))
@@ -28,6 +32,9 @@ public class AuthService(UserManager<User> _userManager,
             user = await _userManager.FindByNameAsync(DTO.UserNameOrUserEmail);
         }
 
+        if (user == null)
+            throw new NotFoundException<User>();
+
         var result = await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
         if (!result.Succeeded)
         {
@@ -35,11 +42,18 @@ public class AuthService(UserManager<User> _userManager,
             {
                 throw new Exception("Wait untill" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
             }
-            if(result.IsNotAllowed)
+            if (result.IsNotAllowed)
             {
                 throw new Exception("Please confirm your email. If you have confirmed your email ,UserName or Email is incorrect!");
             }
         }
+
+        return _tokenHandler.CreateToken(new DTOs.CommonDTOs.JwtDTO
+       { 
+            FullName=user.FullName,
+            Email=user.Email,
+            //Role=user.Role,
+        });
 
     }
     public async Task<string> RegisterAsync(RegisterDTO DTO)
@@ -58,9 +72,9 @@ public class AuthService(UserManager<User> _userManager,
         {
             Email = DTO.Email,
             FullName = DTO.FullName,
-            ApartmentNo=DTO.ApartmentNo,
+            ApartmentNo = DTO.ApartmentNo,
             UserName = DTO.UserName,
-            ImageUrl =await  DTO.Image.UploadAsync()
+            ImageUrl = await DTO.Image.UploadAsync()
         };
 
 
@@ -71,17 +85,17 @@ public class AuthService(UserManager<User> _userManager,
             return $"User was not registered successfully: {errors}";
         }
         string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        _emailService.SendEmailConfirmationAsync(user.Email,user.UserName,token);
+        _emailService.SendEmailConfirmationAsync(user.Email, user.UserName, token);
         return "User registered successfully";
     }
     public async Task LogOut()
     {
         await _signInManager.SignOutAsync();
     }
-    public async Task VerifyEmail(string token,string user)
+    public async Task VerifyEmail(string token, string user)
     {
-        var entity= await _userManager.FindByNameAsync(user);
-        var result= await _userManager.ConfirmEmailAsync(entity, token.Replace(' ','+'));
+        var entity = await _userManager.FindByNameAsync(user);
+        var result = await _userManager.ConfirmEmailAsync(entity, token.Replace(' ', '+'));
         if (!result.Succeeded)
         {
             string errors = string.Join(", ", result.Errors.Select(e => e.Description));

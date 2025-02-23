@@ -168,3 +168,4 @@ C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Final#CFF.API.
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Stripe.net.dll
+C:\Users\hp\source\repos\Final#CFF\Final#CFF.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
