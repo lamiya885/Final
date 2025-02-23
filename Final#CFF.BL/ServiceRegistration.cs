@@ -10,6 +10,7 @@ using FluentValidation.AspNetCore;
 using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Services.Implements;
 using Final_CFF.BL.ExternalServices.Abstracts;
+using Final_CFF.BL.Helpers;
 
 namespace Final_CFF.BL
 {
@@ -31,6 +32,11 @@ namespace Final_CFF.BL
             services.AddValidatorsFromAssemblyContaining(typeof(ServiceRegistration));
             return services;
         }
-       
+        public static void ConfigureServices(IServiceCollection services)
+        {
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+            services.AddControllers();
+        }
+
     }
 }

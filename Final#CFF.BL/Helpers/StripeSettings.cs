@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Final_CFF.BL.Helpers;
 
-public class StripeConfig
+public class StripeSettings
 {
-    public string ApiKey { get; set; }
+    public string SecretKey { get; set; }
+    public string PublishableKey { get; set; }
 }

@@ -1,4 +1,5 @@
 ﻿using Final_CFF.BL.DTOs.PaymentDTOs;
+using Final_CFF.BL.Services.Implements;
 using Final_CFF.BL.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +40,19 @@ namespace Final_CFF.API.Controllers
         {
            _service.PaymentIntent(DTO);
             return Ok();
+        }
+      
+
+        [HttpPost]
+        public async Task<IActionResult> Charge([FromBody] ChargeRequest request)
+        {
+            var charge = await _service.CreateCharge(request.Token, request.Amount);
+
+            if (charge.Status == "succeeded")
+            {
+                return Ok("Ödəniş ugurla yerinə yetirildi.");
+            }
+            return BadRequest("Ödəniş zamani xeta  bas verdi.");
         }
 
     }
