@@ -11,6 +11,7 @@ using Final_CFF.BL.DTOs.Auth;
 using Final_CFF.BL.Services.Implements;
 using Final_CFF.BL.ExternalServices.Abstracts;
 using Final_CFF.BL.Helpers;
+using Final_CFF.BL.ExternalServices.Implements;
 
 namespace Final_CFF.BL
 {
@@ -23,7 +24,7 @@ namespace Final_CFF.BL
             services.AddScoped<ISliderService, SliderService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IEmailService, EmailService>();
-            services.AddScoped<ITokenHandler,ITokenHandler>();
+            services.AddScoped<ITokenHandler,TokenHandler>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
@@ -34,7 +35,7 @@ namespace Final_CFF.BL
         }
         public static void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+       //     services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
             services.AddControllers();
         }
 

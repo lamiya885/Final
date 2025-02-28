@@ -16,11 +16,13 @@ using Stripe;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class StripeService(UserManager<User> _userManager)
+public class StripeService
 {
+    private readonly UserManager<User> _userManager;
     readonly StripeSettings _stripeSettings;
-    public StripeService(IOptions<StripeSettings> stripeSettings)
+    public StripeService(UserManager<User> userManager, IOptions<StripeSettings> stripeSettings)
     {
+        _userManager = userManager;
         _stripeSettings = stripeSettings.Value;
         StripeConfiguration.ApiKey = _stripeSettings.SecretKey;
     }
@@ -34,7 +36,7 @@ public class StripeService(UserManager<User> _userManager)
             Description = DTO.Description,
         };
         var service = new CustomerService();
-        Customer customer = service.Create(options);
+        Customer customer = await service.CreateAsync(options);
 
         if (await _userManager.Users.AnyAsync(x => x.Email == DTO.Email))
         {

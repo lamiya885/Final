@@ -11,7 +11,7 @@ namespace Final_CFF.API.Controllers
     [ApiController]
     public class StripeController(IStripeService _service) : ControllerBase
     {
-        private const string WebhookSecret = "";
+        private const string WebhookSecret = "rk_test_51QvgBDP9VoKxey61TIitIM3zA22bbHdNl5ok2GV6bjszKA2smNYt3jcSgwiEAkSF5RGDdhTS8jRddXbhXi1AqFTL00765jOzkp";
         [HttpPost]
         public async Task<IActionResult> HandleWebhook()
         {
@@ -44,7 +44,7 @@ namespace Final_CFF.API.Controllers
       
 
         [HttpPost]
-        public async Task<IActionResult> Charge([FromBody] ChargeRequest request)
+        public async Task<IActionResult> Charge( ChargeRequest request)
         {
             var charge = await _service.CreateCharge(request.Token, request.Amount);
 

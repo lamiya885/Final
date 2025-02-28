@@ -17,7 +17,7 @@ namespace Final_CFF.DAL
         {
             services.AddScoped<ISliderRepository, SliderRepository>();
             services.AddScoped<IBuildingRepository, BuildingRepository>();
-            services.AddScoped<IApartmentRepository, ApartmentRepoitory>();
+            services.AddScoped<IApartmentRepository, ApartmentRepository>();
             //services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }

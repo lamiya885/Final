@@ -102,6 +102,22 @@ public class AuthService(UserManager<User> _userManager,
         }
         await _signInManager.SignInAsync(entity, true);
     }
+
+    //public async Task<string> SendVerificationEmailAsync(string email, string token)
+    //{
+    //    var user = await _userManager.FindByEmailAsync(email);
+    //    if (user == null)
+    //        throw new NotFoundException<User>();
+
+    //    await _emailService.SendEmailVereficationAsync(email, token);
+
+    //    return "Verification email sent.";
+    //}
+
+    //public async Task<bool> VerifyAccountAsync(string email, string token)
+    //    => await _emailService.VerifyEmailAsync(email, token);
+
+
     //public async Task ForgotPassword(string Email)
     //{
     //    var user = await _userManager.FindByEmailAsync(Email);

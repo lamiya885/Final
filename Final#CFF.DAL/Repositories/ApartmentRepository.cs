@@ -9,9 +9,9 @@ using Final_CFF.DAL.Context;
 
 namespace Final_CFF.DAL.Repositories;
 
-public class ApartmentRepoitory:GenericRepository<Apartment>,IApartmentRepository
+public class ApartmentRepository:GenericRepository<Apartment>,IApartmentRepository
 {
-    public ApartmentRepoitory(FinalDbContext _context):base(_context)
+    public ApartmentRepository(FinalDbContext _context):base(_context)
     {
         
     }
