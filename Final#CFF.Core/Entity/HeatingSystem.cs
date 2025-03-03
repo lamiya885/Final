@@ -7,9 +7,11 @@ using Final_CFF.Core.Entity.Common;
 
 namespace Final_CFF.Core.Entity
 {
-    public class HeatingSystem:BaseEntity
+    public class HeatingSystem : BaseEntity
     {
-       
+        public double RadiatorTemperature { get; set; }
+        public double HotWaterSupply { get; set; }
+        public bool IsOn { get; set; }
 
     }
 }

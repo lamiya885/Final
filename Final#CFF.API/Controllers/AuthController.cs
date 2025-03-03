@@ -23,6 +23,7 @@ namespace Final_CFF.API.Controllers
             await _service.LoginAsync(DTO);
             return Ok();
         }
+        [HttpPost]
         public  async Task<IActionResult> LogOut()
         {
             await  _service.LogOut();

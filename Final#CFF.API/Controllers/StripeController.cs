@@ -1,6 +1,7 @@
 ﻿using Final_CFF.BL.DTOs.PaymentDTOs;
-using Final_CFF.BL.Services.Implements;
+using Final_CFF.BL.Helpers;
 using Final_CFF.BL.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stripe;
@@ -9,6 +10,7 @@ namespace Final_CFF.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "Resident")]
     public class StripeController(IStripeService _service) : ControllerBase
     {
         private const string WebhookSecret = "rk_test_51QvgBDP9VoKxey61TIitIM3zA22bbHdNl5ok2GV6bjszKA2smNYt3jcSgwiEAkSF5RGDdhTS8jRddXbhXi1AqFTL00765jOzkp";

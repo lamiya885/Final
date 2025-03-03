@@ -7,6 +7,7 @@ using Final_CFF.BL.DTOs.AparmentDTOs;
 using Final_CFF.BL.DTOs.PaymentDTOs;
 using Final_CFF.BL.Exceptions.Common;
 using Final_CFF.BL.Helpers;
+using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.DAL.Context;
 using Microsoft.AspNetCore.Identity;
@@ -16,7 +17,7 @@ using Stripe;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class StripeService
+public class StripeService:IStripeService
 {
     private readonly UserManager<User> _userManager;
     readonly StripeSettings _stripeSettings;
@@ -49,7 +50,7 @@ public class StripeService
         var paymentIntentService = new PaymentIntentService();
         var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
         {
-            Amount = DTO.Amount,
+            Amount = DTO.Amount*100,
             Currency =DTO.Currency.ToString(),
             PaymentMethod = DTO.PaymentMethod,
             Confirm = DTO.Confirm,

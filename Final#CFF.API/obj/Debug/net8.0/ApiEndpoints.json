@@ -80,6 +80,16 @@
   },
   {
     "ContainingType": "Final_CFF.API.Controllers.AuthController",
+    "Method": "LogOut",
+    "RelativePath": "api/Auth/LogOut",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/Register",
     "HttpMethod": "POST",
@@ -266,6 +276,48 @@
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.StripeController",
+    "Method": "Charge",
+    "RelativePath": "api/Stripe/Charge",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Final_CFF.BL.Helpers.ChargeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.StripeController",
+    "Method": "HandleWebhook",
+    "RelativePath": "api/Stripe/HandleWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.StripeController",
+    "Method": "PaymentIntent",
+    "RelativePath": "api/Stripe/PaymentIntent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DTO",
+        "Type": "Final_CFF.BL.DTOs.PaymentDTOs.CreatePaymentDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

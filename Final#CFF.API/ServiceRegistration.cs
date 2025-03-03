@@ -3,6 +3,7 @@ using System.Text;
 using Final_CFF.BL.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Stripe;
 
 namespace Final_CFF.API
 {
@@ -67,6 +68,11 @@ namespace Final_CFF.API
             return services;
         }
        
+        public static IServiceCollection AddStripe(this IServiceCollection services,IConfiguration configuration)
+        {
 
+            StripeConfiguration.ApiKey = configuration.GetConnectionString("Stripe");
+            return services;
+        }
     }
 }

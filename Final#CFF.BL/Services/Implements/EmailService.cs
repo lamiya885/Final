@@ -27,7 +27,7 @@ namespace Final_CFF.BL.Services.Implements
             _client.Port = opt.Port;
             _client.Credentials = new NetworkCredential(opt.Sender, opt.Password);
             _client.EnableSsl = true;
-            _from = new MailAddress(opt.Sender, "info@adu.edu.az");
+            _from = new MailAddress(opt.Sender, "Commandant");
             Context = acc.HttpContext;
         }
 

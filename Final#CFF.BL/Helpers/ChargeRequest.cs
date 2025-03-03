@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_CFF.BL.Services.Implements;
+namespace Final_CFF.BL.Helpers;
 
 public class ChargeRequest
 {

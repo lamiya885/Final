@@ -12,6 +12,7 @@ using Final_CFF.BL.Services.Implements;
 using Final_CFF.BL.ExternalServices.Abstracts;
 using Final_CFF.BL.Helpers;
 using Final_CFF.BL.ExternalServices.Implements;
+using Microsoft.Extensions.Configuration;
 
 namespace Final_CFF.BL
 {
@@ -25,6 +26,7 @@ namespace Final_CFF.BL
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ITokenHandler,TokenHandler>();
+            services.AddScoped<IStripeService,StripeService>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
@@ -33,10 +35,10 @@ namespace Final_CFF.BL
             services.AddValidatorsFromAssemblyContaining(typeof(ServiceRegistration));
             return services;
         }
-        public static void ConfigureServices(IServiceCollection services)
+        public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
         {
-       //     services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
-            services.AddControllers();
+          services.Configure<StripeSettings>(configuration.GetSection("Stripe"));
+            return services;
         }
 
     }

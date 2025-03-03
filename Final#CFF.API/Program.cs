@@ -26,6 +26,7 @@ namespace Final_CFF.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var configuration = builder.Configuration;
             // Add services to the container.
 
             builder.Services.AddDbContext<FinalDbContext>(option =>
@@ -36,9 +37,11 @@ namespace Final_CFF.API
             builder.Services.AddControllers();
             builder.Services.AddRepositories();
             builder.Services.AddServices();
-            builder.Services.AddJwtOptions(builder.Configuration);
-            builder.Services.AddEmailOptions(builder.Configuration);
-            builder.Services.AddJwt(builder.Configuration);
+            builder.Services.AddJwt(configuration);
+            builder.Services.AddJwtOptions(configuration);
+            builder.Services.AddEmailOptions(configuration);
+            builder.Services.ConfigureServices(configuration);
+            builder.Services.AddStripe(configuration);
             builder.Services.AddHttpContextAccessor();
 
             builder.Services.AddMemoryCache();
@@ -51,7 +54,9 @@ namespace Final_CFF.API
                     Name = "Authorization",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.Http,
-                    Scheme = "Bearer"
+                    Scheme = "Bearer",
+                    //error hell etmese asagdakini sil
+                    BearerFormat = "JWT"
                 });
 
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -90,7 +95,6 @@ namespace Final_CFF.API
             builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection(SmtpOptions.Name));
 
 
-            var configuration = builder.Configuration;
 
             StripeConfiguration.ApiKey = configuration.GetConnectionString("Stripe");
 
