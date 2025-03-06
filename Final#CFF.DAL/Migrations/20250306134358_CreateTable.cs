@@ -31,9 +31,9 @@ namespace Final_CFF.DAL.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BuildingName = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
-                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
@@ -48,9 +48,9 @@ namespace Final_CFF.DAL.Migrations
                     RadiatorTemperature = table.Column<double>(type: "float", nullable: false),
                     HotWaterSupply = table.Column<double>(type: "float", nullable: false),
                     IsOn = table.Column<bool>(type: "bit", nullable: false),
-                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
@@ -103,9 +103,9 @@ namespace Final_CFF.DAL.Migrations
                     HouseNo = table.Column<int>(type: "int", nullable: false),
                     BuildingId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BuildingName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {

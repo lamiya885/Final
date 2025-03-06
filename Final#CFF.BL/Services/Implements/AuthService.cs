@@ -48,11 +48,13 @@ public class AuthService(UserManager<User> _userManager,
             }
         }
 
+
+
         return _tokenHandler.CreateToken(new DTOs.CommonDTOs.JwtDTO
        { 
             FullName=user.FullName,
             Email=user.Email,
-            //Role=user.Role,
+           // Role=user.Role,
         });
 
     }

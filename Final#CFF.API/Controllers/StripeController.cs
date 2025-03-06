@@ -36,6 +36,10 @@ namespace Final_CFF.API.Controllers
                 Console.WriteLine($"Stripe error: {e.Message}");
                 return BadRequest();
             }
+            catch ( Exception ex )
+            {
+                throw new Exception(ex.Message );
+            }
         }
         [HttpPost]
         public async Task<IActionResult> PaymentIntent(CreatePaymentDTO DTO)

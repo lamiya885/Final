@@ -8,8 +8,8 @@ namespace Final_CFF.Core.Enums;
 
 public enum Roles
 {
-    Resident=1,
-    BuildingManager=2,
-    
-    Admin= Resident | BuildingManager
+    Resident=2,
+    Admin=4,
+
+    Moderator=Resident|Admin
 }

@@ -9,7 +9,7 @@ namespace Final_CFF.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize(Roles = "BuildingManager")]
+    [Authorize(Roles = "Admin")]
     public class BuildingsController (IBuildingService _service): ControllerBase
     {
         [HttpGet]

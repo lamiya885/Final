@@ -1,6 +1,7 @@
 using System.Text;
 using Final_CFF.BL;
 using Final_CFF.BL.Exceptions;
+using Final_CFF.BL.Extentions;
 using Final_CFF.BL.Helpers;
 using Final_CFF.Core.Entity;
 using Final_CFF.DAL;
@@ -13,6 +14,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver.Core.Misc;
@@ -84,6 +86,7 @@ namespace Final_CFF.API
                 opt.User.RequireUniqueEmail = true;
                 opt.SignIn.RequireConfirmedEmail = true;
                 opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequiredLength = 2;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;
                 opt.Password.RequireUppercase = false;
@@ -94,9 +97,6 @@ namespace Final_CFF.API
             SmtpOptions opt = new();
             builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection(SmtpOptions.Name));
 
-
-
-            StripeConfiguration.ApiKey = configuration.GetConnectionString("Stripe");
 
             var app = builder.Build();
 
@@ -109,6 +109,8 @@ namespace Final_CFF.API
                     opt.EnablePersistAuthorization();
                 });
             }
+
+            app.UseUserSeed();
 
             app.UseExceptionHandler(
                 opt =>

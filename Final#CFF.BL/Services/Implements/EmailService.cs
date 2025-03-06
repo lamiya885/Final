@@ -19,17 +19,20 @@ namespace Final_CFF.BL.Services.Implements
         readonly SmtpClient _client;
         readonly MailAddress _from;
         readonly HttpContext Context;
-        public EmailService(IOptions<SmtpOptions> option, IHttpContextAccessor acc)
-        {
-            var opt = option.Value;
-            _client = new(opt.Host, opt.Port);
-            _client.Host = opt.Host;
-            _client.Port = opt.Port;
-            _client.Credentials = new NetworkCredential(opt.Sender, opt.Password);
-            _client.EnableSsl = true;
-            _from = new MailAddress(opt.Sender, "Commandant");
-            Context = acc.HttpContext;
-        }
+        //public EmailService(IOptions<SmtpOptions> option, IHttpContextAccessor acc)
+        //{
+        //    if (option?.Value == null)
+        //        throw new Exception("SmtpOptions configuration is missing!");
+
+        //    var opt = option.Value;
+        //    _client = new(opt.Host, opt.Port);
+        //    //_client.Host = opt.Host;
+        //    //_client.Port = opt.Port;
+        //    _client.Credentials = new NetworkCredential(opt.Sender, opt.Password);
+        //    _client.EnableSsl = true;
+        //    _from = new MailAddress(opt.Sender, "Building Commandant ");
+        //    Context = acc.HttpContext;
+        //}
 
         public void SendEmailConfirmationAsync(string reciver, string name, string token)
         {

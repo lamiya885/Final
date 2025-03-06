@@ -18,6 +18,14 @@ namespace Final_CFF.DAL.Configurations
             builder.Property(h=>h.HotWaterSupply)
                 .IsRequired();
             builder.Property(h => h.IsOn);
+
+            builder.Property(c => c.CreateTime)
+              .IsRequired()
+              .HasDefaultValueSql("GETDATE()");
+
+            builder.Property(c => c.IsDeleted)
+                   .IsRequired()
+                   .HasDefaultValue(false);
         }
     }
 }

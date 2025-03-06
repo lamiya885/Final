@@ -23,5 +23,12 @@ public class ApartmentConfiguration : IEntityTypeConfiguration<Apartment>
         builder.HasOne(a => a.Building)
             .WithMany(a => a.Apartments)
             .HasForeignKey(a => a.BuildingId);
+        builder.Property(c => c.CreateTime)
+              .IsRequired()
+              .HasDefaultValueSql("GETDATE()");
+
+        builder.Property(c => c.IsDeleted)
+               .IsRequired()
+               .HasDefaultValue(false);
     }
 }

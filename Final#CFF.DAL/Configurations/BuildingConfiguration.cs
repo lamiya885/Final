@@ -20,5 +20,13 @@ public class BuildingConfiguration : IEntityTypeConfiguration<Building>
         builder.HasMany(b => b.Apartments)
             .WithOne(b => b.Building)
             .HasForeignKey(b => b.BuildingId);
+
+        builder.Property(c => c.CreateTime)
+                .IsRequired()
+                .HasDefaultValueSql("GETDATE()");
+
+        builder.Property(c => c.IsDeleted)
+               .IsRequired()
+               .HasDefaultValue(false);
     }
 }
