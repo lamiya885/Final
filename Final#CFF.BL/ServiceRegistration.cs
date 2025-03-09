@@ -27,6 +27,7 @@ namespace Final_CFF.BL
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ITokenHandler,TokenHandler>();
             services.AddScoped<IStripeService,StripeService>();
+            services.AddScoped<IHeatingSystemService,HeatingSystemService>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)

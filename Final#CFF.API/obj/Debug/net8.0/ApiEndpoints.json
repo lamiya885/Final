@@ -198,6 +198,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "Method": "AriithmeticMean",
+    "RelativePath": "api/HeatinSystem/AriithmeticMean",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "Method": "Create",
+    "RelativePath": "api/HeatinSystem/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Final_CFF.BL.DTOs.HeatingSystemDTOs.CreateHeatingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "Method": "Get",
+    "RelativePath": "api/HeatinSystem/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Final_CFF.API.Controllers.SlidersController",
     "Method": "Create",
     "RelativePath": "api/Sliders/Create",

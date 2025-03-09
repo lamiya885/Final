@@ -35,6 +35,9 @@ public class AuthService(UserManager<User> _userManager,
         if (user == null)
             throw new NotFoundException<User>();
 
+        var roles=await _userManager.GetRolesAsync(user);
+        string userRole = roles.FirstOrDefault();
+
         var result = await _signInManager.PasswordSignInAsync(user, DTO.Password, DTO.RememberMe, true);
         if (!result.Succeeded)
         {
@@ -54,7 +57,8 @@ public class AuthService(UserManager<User> _userManager,
        { 
             FullName=user.FullName,
             Email=user.Email,
-           // Role=user.Role,
+            Role=userRole
+            //Role=(int)user.Role
         });
 
     }

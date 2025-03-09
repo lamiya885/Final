@@ -20,8 +20,8 @@ namespace Final_CFF.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDTO DTO)
         {
-            await _service.LoginAsync(DTO);
-            return Ok();
+          //  await _service.LoginAsync(DTO);
+            return Ok(await _service.LoginAsync(DTO));
         }
         [HttpPost]
         public  async Task<IActionResult> LogOut()

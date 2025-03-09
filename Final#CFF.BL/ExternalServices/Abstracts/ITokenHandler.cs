@@ -10,6 +10,6 @@ namespace Final_CFF.BL.ExternalServices.Abstracts
 {
     public interface ITokenHandler
     {
-        string CreateToken(JwtDTO DTO);
+        string CreateToken(JwtDTO DTO,int hours=36);
     }
 }

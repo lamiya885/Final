@@ -339,6 +339,61 @@
         }
       }
     },
+    "/api/HeatinSystem/Get": {
+      "get": {
+        "tags": [
+          "HeatinSystem"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HeatinSystem/Create": {
+      "post": {
+        "tags": [
+          "HeatinSystem"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeatingDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeatingDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeatingDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HeatinSystem/AriithmeticMean": {
+      "post": {
+        "tags": [
+          "HeatinSystem"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Sliders/Get": {
       "get": {
         "tags": [
@@ -588,6 +643,23 @@
           "buildingName": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateHeatingDTO": {
+        "type": "object",
+        "properties": {
+          "radiatorTemperature": {
+            "type": "number",
+            "format": "double"
+          },
+          "hotWaterSupply": {
+            "type": "number",
+            "format": "double"
+          },
+          "isOn": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
