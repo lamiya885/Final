@@ -10,4 +10,5 @@ public class CreateApartmentDTO
 {
     public int No { get; set; }
     public string BuildingName { get; set; }
+    public Guid BuildingId { get; set; }
 }

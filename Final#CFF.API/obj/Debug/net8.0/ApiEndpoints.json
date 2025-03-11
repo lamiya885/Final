@@ -198,9 +198,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "ContainingType": "Final_CFF.API.Controllers.HeatingSystemController",
     "Method": "AriithmeticMean",
-    "RelativePath": "api/HeatinSystem/AriithmeticMean",
+    "RelativePath": "api/HeatingSystem/AriithmeticMean",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -208,9 +208,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "ContainingType": "Final_CFF.API.Controllers.HeatingSystemController",
     "Method": "Create",
-    "RelativePath": "api/HeatinSystem/Create",
+    "RelativePath": "api/HeatingSystem/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -224,9 +224,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Final_CFF.API.Controllers.HeatinSystemController",
+    "ContainingType": "Final_CFF.API.Controllers.HeatingSystemController",
     "Method": "Get",
-    "RelativePath": "api/HeatinSystem/Get",
+    "RelativePath": "api/HeatingSystem/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

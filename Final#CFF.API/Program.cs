@@ -84,7 +84,7 @@ namespace Final_CFF.API
             {
                 opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._";
                 opt.User.RequireUniqueEmail = true;
-                opt.SignIn.RequireConfirmedEmail = true;
+                opt.SignIn.RequireConfirmedEmail = false;
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequiredLength = 2;
                 opt.Password.RequireDigit = false;
@@ -112,34 +112,34 @@ namespace Final_CFF.API
 
             app.UseUserSeed();
 
-            app.UseExceptionHandler(
-                opt =>
-                {
-                    opt.Run(async context =>
-                    {
-                        var feature = context.Features.GetRequiredFeature<ExceptionHandlerFeature>();
-                        var exception = feature.Error;
-                        if (exception is IBaseException bEx)
-                        {
-                            context.Response.StatusCode = bEx.StatusCode;
-                            await context.Response.WriteAsJsonAsync(new
-                            {
-                                Message = bEx.ErrorMessage
-                            });
+            //app.UseExceptionHandler(
+            //    opt =>
+            //    {
+            //        opt.Run(async context =>
+            //        {
+            //            var feature = context.Features.GetRequiredFeature<ExceptionHandlerFeature>();
+            //            var exception = feature.Error;
+            //            if (exception is IBaseException bEx)
+            //            {
+            //                context.Response.StatusCode = bEx.StatusCode;
+            //                await context.Response.WriteAsJsonAsync(new
+            //                {
+            //                    Message = bEx.ErrorMessage
+            //                });
 
-                        }
-                        else
-                        {
-                            context.Response.StatusCode = 400;
-                            await context.Response.WriteAsJsonAsync(new
-                            {
-                                Message = "Bir xeta bas verdi!"
-                            });
-                        }
-                    }
-                        );
-                }
-            );
+            //            }
+            //            else
+            //            {
+            //                context.Response.StatusCode = 400;
+            //                await context.Response.WriteAsJsonAsync(new
+            //                {
+            //                    Message = "Bir xeta bas verdi!"
+            //                });
+            //            }
+            //        }
+            //            );
+            //    }
+            //);
 
             app.UseHttpsRedirection();
 

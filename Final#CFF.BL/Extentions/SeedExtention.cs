@@ -36,6 +36,7 @@ public static class SeedExtention
                     UserName = "admin",
                     Email = "admin@gmail.com",
                     ImageUrl = "photo.jpg",
+
                     ApertmentId= new Guid("4a8b1bb8-74d0-4b0b-b1c5-ff6f318401e8")
                 };
                 userManager.CreateAsync(user, "1234").Wait();

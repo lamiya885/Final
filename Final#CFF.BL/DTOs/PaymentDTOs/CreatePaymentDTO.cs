@@ -13,7 +13,7 @@ public class CreatePaymentDTO
     public string Name { get; set; }
     public string Description { get; set; }
     public int Amount { get; set; }
-    public Currencies Currency {  get; set; }
+    //public Currencies Currency {  get; set; }
     public string PaymentMethod { get; set; }
     public bool Confirm { get; set; }
 }

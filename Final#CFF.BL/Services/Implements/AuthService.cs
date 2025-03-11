@@ -2,6 +2,7 @@
 using System.Security.Claims;
 using System.Text;
 using Final_CFF.BL.DTOs.Auth;
+using Final_CFF.BL.DTOs.CommonDTOs;
 using Final_CFF.BL.Exceptions.Common;
 using Final_CFF.BL.Extentions;
 using Final_CFF.BL.ExternalServices.Abstracts;
@@ -53,13 +54,14 @@ public class AuthService(UserManager<User> _userManager,
 
 
 
-        return _tokenHandler.CreateToken(new DTOs.CommonDTOs.JwtDTO
+        var a = _tokenHandler.CreateToken(new DTOs.CommonDTOs.JwtDTO
        { 
+            UserName = user.UserName,
             FullName=user.FullName,
             Email=user.Email,
-            Role=userRole
-            //Role=(int)user.Role
+            Role="Resident"
         });
+        return a;
 
     }
     public async Task<string> RegisterAsync(RegisterDTO DTO)
@@ -79,19 +81,21 @@ public class AuthService(UserManager<User> _userManager,
             Email = DTO.Email,
             FullName = DTO.FullName,
             ApartmentNo = DTO.ApartmentNo,
-            UserName = DTO.UserName,
+            ApertmentId = new Guid("4a8b1bb8-74d0-4b0b-b1c5-ff6f318401e8"),// bunu duzeltmeye calis
+            UserName = DTO.UserName,            
             ImageUrl = await DTO.Image.UploadAsync()
         };
 
 
         var result = await _userManager.CreateAsync(user, DTO.Password);
+        var addToRoleResult = await _userManager.AddToRoleAsync(user, "Resident");
         if (!result.Succeeded)
         {
             string errors = string.Join(", ", result.Errors.Select(e => e.Description));
             return $"User was not registered successfully: {errors}";
         }
         string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        _emailService.SendEmailConfirmationAsync(user.Email, user.UserName, token);
+        /*_emailService.SendEmailConfirmationAsync(user.Email, user.UserName, token);*/
         return "User registered successfully";
     }
     public async Task LogOut()

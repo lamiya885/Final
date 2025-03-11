@@ -32,7 +32,7 @@ namespace Final_CFF.BL.Services.Implements
         //    _client.EnableSsl = true;
         //    _from = new MailAddress(opt.Sender, "Building Commandant ");
         //    Context = acc.HttpContext;
-        //}
+        
 
         public void SendEmailConfirmationAsync(string reciver, string name, string token)
         {

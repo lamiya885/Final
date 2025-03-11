@@ -339,10 +339,10 @@
         }
       }
     },
-    "/api/HeatinSystem/Get": {
+    "/api/HeatingSystem/Get": {
       "get": {
         "tags": [
-          "HeatinSystem"
+          "HeatingSystem"
         ],
         "responses": {
           "200": {
@@ -351,10 +351,10 @@
         }
       }
     },
-    "/api/HeatinSystem/Create": {
+    "/api/HeatingSystem/Create": {
       "post": {
         "tags": [
-          "HeatinSystem"
+          "HeatingSystem"
         ],
         "requestBody": {
           "content": {
@@ -382,10 +382,10 @@
         }
       }
     },
-    "/api/HeatinSystem/AriithmeticMean": {
+    "/api/HeatingSystem/AriithmeticMean": {
       "post": {
         "tags": [
-          "HeatinSystem"
+          "HeatingSystem"
         ],
         "responses": {
           "200": {
@@ -633,6 +633,10 @@
           "buildingName": {
             "type": "string",
             "nullable": true
+          },
+          "buildingId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -683,9 +687,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "currency": {
-            "$ref": "#/components/schemas/Currencies"
-          },
           "paymentMethod": {
             "type": "string",
             "nullable": true
@@ -695,33 +696,6 @@
           }
         },
         "additionalProperties": false
-      },
-      "Currencies": {
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
-        ],
-        "type": "integer",
-        "format": "int32"
       },
       "LoginDTO": {
         "type": "object",
@@ -751,6 +725,10 @@
           "buildingName": {
             "type": "string",
             "nullable": true
+          },
+          "buildingId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false

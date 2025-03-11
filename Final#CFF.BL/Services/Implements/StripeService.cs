@@ -51,7 +51,7 @@ public class StripeService:IStripeService
         var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
         {
             Amount = DTO.Amount*100,
-            Currency =DTO.Currency.ToString(),
+            Currency ="usd",
             PaymentMethod = DTO.PaymentMethod,
             Confirm = DTO.Confirm,
         });

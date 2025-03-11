@@ -8,7 +8,7 @@ namespace Final_CFF.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class AuthController(IAuthService _service,IEmailService _emailService) : ControllerBase
+    public class AuthController(IAuthService _service) : ControllerBase
     {
         [HttpPost]
         public async Task<IActionResult> Register(RegisterDTO DTO)
@@ -20,7 +20,6 @@ namespace Final_CFF.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDTO DTO)
         {
-          //  await _service.LoginAsync(DTO);
             return Ok(await _service.LoginAsync(DTO));
         }
         [HttpPost]

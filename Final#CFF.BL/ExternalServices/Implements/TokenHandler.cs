@@ -15,26 +15,23 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Final_CFF.BL.ExternalServices.Implements
 {
-    public class TokenHandler : ITokenHandler
+    public class TokenHandler(IConfiguration _configuration) : ITokenHandler
     {
         readonly JwtOptions opt;
-        public TokenHandler(IOptions<JwtOptions> _opt)
-        {
-            opt = _opt.Value;
-        }
+       
         public string CreateToken(JwtDTO DTO, int hours = 36)
         {
             List<Claim> claims = [
                 new Claim(ClaimTypes.Name, DTO.UserName),
             new Claim(ClaimTypes.Email, DTO.Email),
-            new Claim(ClaimTypes.Role,DTO.Role.ToString()),
+            new Claim(ClaimTypes.Role,DTO.Role),
             new Claim("FullName",DTO.FullName)
             ];
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(opt.SecretKey));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
             SigningCredentials cred = new(key, SecurityAlgorithms.HmacSha256);
             JwtSecurityToken secToken = new(
-                issuer: opt.Issuer,
-                audience: opt.Audience,
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
                 claims: claims,
                 notBefore: DateTime.Now,
                 expires: DateTime.Now.AddHours(hours),

@@ -7,10 +7,11 @@ using Final_CFF.BL.DTOs.AparmentDTOs;
 using Final_CFF.BL.Services.Interfaces;
 using Final_CFF.Core.Entity;
 using Final_CFF.Core.Repositories.ApartmentRepository;
+using Final_CFF.DAL.Context;
 
 namespace Final_CFF.BL.Services.Implements;
 
-public class ApartmentService(IApartmentRepository _repo) : IApartmentService
+public class ApartmentService(IApartmentRepository _repo,FinalDbContext _context) : IApartmentService
 {
     public async Task<IEnumerable<Building>> GetAllAsync()
     {
@@ -30,7 +31,8 @@ public class ApartmentService(IApartmentRepository _repo) : IApartmentService
         };
 
         await _repo.AddAsync(apartment);
-        await _repo.SaveAsync();
+        //await _repo.SaveAsync();
+        await _context.SaveChangesAsync();
         return apartment.Id;
 
     }
