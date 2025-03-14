@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Final_CFF.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateTable : Migration
+    public partial class CreateTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -55,6 +55,22 @@ namespace Final_CFF.DAL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_HeatingSystems", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HouseholdExpenses",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", maxLength: 100000, nullable: false),
+                    IsPaid = table.Column<bool>(type: "bit", nullable: false),
+                    CreateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HouseholdExpenses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -309,6 +325,9 @@ namespace Final_CFF.DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "HeatingSystems");
+
+            migrationBuilder.DropTable(
+                name: "HouseholdExpenses");
 
             migrationBuilder.DropTable(
                 name: "Sliders");

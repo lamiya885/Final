@@ -120,6 +120,33 @@ namespace Final_CFF.DAL.Migrations
                     b.ToTable("HeatingSystems");
                 });
 
+            modelBuilder.Entity("Final_CFF.Core.Entity.HouseholdExpenses", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasMaxLength(100000)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HouseholdExpenses");
+                });
+
             modelBuilder.Entity("Final_CFF.Core.Entity.Slider", b =>
                 {
                     b.Property<Guid>("Id")

@@ -28,36 +28,39 @@ public class StripeService:IStripeService
         StripeConfiguration.ApiKey = _stripeSettings.SecretKey;
     }
 
-    public async Task PaymentIntent(CreatePaymentDTO DTO)
+    public async Task<PaymentIntent> PaymentIntent(CreatePaymentDTO createPaymentDTO)
     {
-        var options = new CustomerCreateOptions
+        if (string.IsNullOrEmpty(createPaymentDTO.Email))
+            throw new ArgumentException("Email is required");
+
+        if (string.IsNullOrEmpty(createPaymentDTO.PaymentMethod))
+            throw new ArgumentException("Payment method is required");
+
+        if (string.IsNullOrEmpty(createPaymentDTO.Currency))
+            throw new ArgumentException("Currency is required");
+
+        if (createPaymentDTO.Amount <= 0)
+            throw new ArgumentException("Amount must be greater than zero");
+
+        var amountInCents = createPaymentDTO.Amount * 100; // Stripe kuruş formatı
+
+        var options = new PaymentIntentCreateOptions
         {
-            Email = DTO.Email,
-            Name = DTO.Name,
-            Description = DTO.Description,
+            Amount = amountInCents,
+            Currency = createPaymentDTO.Currency.ToLower(), // USD, EUR gibi küçük harf olmalı
+            PaymentMethod = createPaymentDTO.PaymentMethod,
+            ReceiptEmail = createPaymentDTO.Email,
+            Description = createPaymentDTO.Description,
+            Confirm = createPaymentDTO.Confirm
         };
-        var service = new CustomerService();
-        Customer customer = await service.CreateAsync(options);
 
-        if (await _userManager.Users.AnyAsync(x => x.Email == DTO.Email))
-        {
-           throw new ExistException<User>();
-        }
-        if (await _userManager.Users.AnyAsync(x => x.UserName == DTO.Name))
-        {
-            throw new ExistException<User>();
-        }
-        var paymentIntentService = new PaymentIntentService();
-        var paymentIntent = paymentIntentService.Create(new PaymentIntentCreateOptions
-        {
-            Amount = DTO.Amount*100,
-            Currency ="usd",
-            PaymentMethod = DTO.PaymentMethod,
-            Confirm = DTO.Confirm,
-        });
+        var service = new PaymentIntentService();
+        var paymentIntent = await service.CreateAsync(options);
 
-
+        return paymentIntent;
     }
+
+
 
 
 

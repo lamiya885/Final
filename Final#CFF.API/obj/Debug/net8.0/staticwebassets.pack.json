@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0xdg4a4a.rtp",
+      "PackagePath": "staticwebassets\\img\\slider\\0xdg4a4a.rtp"
+    },
+    {
       "Id": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
       "PackagePath": "staticwebassets\\img\\slider\\0yyea2aj.u3z"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\kuwenwsl.4ma",
+      "PackagePath": "staticwebassets\\img\\slider\\kuwenwsl.4ma"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Final#CFF.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

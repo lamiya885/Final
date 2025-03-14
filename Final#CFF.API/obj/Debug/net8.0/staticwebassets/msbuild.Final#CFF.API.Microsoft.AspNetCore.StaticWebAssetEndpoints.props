@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/0xdg4a4a.rtp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0xdg4a4a.rtp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"80894"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 18:03:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/0xdg4a4a.u4ot0tu4zr.rtp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0xdg4a4a.rtp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u4ot0tu4zr"},{"Name":"integrity","Value":"sha256-kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY="},{"Name":"label","Value":"_content/Final#CFF.API/img/slider/0xdg4a4a.rtp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"80894"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 18:03:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/0yyea2aj.pow7nv0fos.u3z">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\0yyea2aj.u3z'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -11,6 +23,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"669492"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Feb 2025 19:28:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/kuwenwsl.4ma">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\kuwenwsl.4ma'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"669492"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 21:26:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Final#CFF.API/img/slider/kuwenwsl.pow7nv0fos.4ma">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\slider\kuwenwsl.4ma'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pow7nv0fos"},{"Name":"integrity","Value":"sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="},{"Name":"label","Value":"_content/Final#CFF.API/img/slider/kuwenwsl.4ma"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"669492"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 21:26:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -687,6 +687,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
           "paymentMethod": {
             "type": "string",
             "nullable": true

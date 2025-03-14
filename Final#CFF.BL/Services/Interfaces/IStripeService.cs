@@ -10,7 +10,7 @@ namespace Final_CFF.BL.Services.Interfaces
 {
     public interface IStripeService
     {
-        Task PaymentIntent(CreatePaymentDTO DTO);
+        Task<PaymentIntent > PaymentIntent(CreatePaymentDTO DTO);
         Task<Charge> CreateCharge(string token, decimal amount);
     }
 }

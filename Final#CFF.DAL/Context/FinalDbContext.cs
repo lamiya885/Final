@@ -20,6 +20,7 @@ public class FinalDbContext : IdentityDbContext
     public DbSet<Apartment> Apartments { get; set; }
     public DbSet<Slider> Sliders { get; set; }
     public DbSet<HeatingSystem> HeatingSystems { get; set; }
+    public DbSet<HouseholdExpenses> HouseholdExpenses { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

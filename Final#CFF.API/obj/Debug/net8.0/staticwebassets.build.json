@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ECdtd7kbQqtYOeaCrZf+OODO4QUGq6a8dC0ZqRH9RHk=",
+  "Hash": "HJYe86U0E7p3W28TWb7+YzPHSunzonGzWqz1z4BUiEI=",
   "Source": "Final#CFF.API",
   "BasePath": "_content/Final#CFF.API",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0xdg4a4a.rtp",
+      "SourceId": "Final#CFF.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\",
+      "BasePath": "_content/Final#CFF.API",
+      "RelativePath": "img/slider/0xdg4a4a#[.{fingerprint}]?.rtp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u4ot0tu4zr",
+      "Integrity": "kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\0xdg4a4a.rtp"
+    },
     {
       "Identity": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
       "SourceId": "Final#CFF.API",
@@ -36,9 +57,112 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\slider\\0yyea2aj.u3z"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\kuwenwsl.4ma",
+      "SourceId": "Final#CFF.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\",
+      "BasePath": "_content/Final#CFF.API",
+      "RelativePath": "img/slider/kuwenwsl#[.{fingerprint}]?.4ma",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pow7nv0fos",
+      "Integrity": "x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\kuwenwsl.4ma"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "img/slider/0xdg4a4a.rtp",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0xdg4a4a.rtp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80894"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:03:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY="
+        }
+      ]
+    },
+    {
+      "Route": "img/slider/0xdg4a4a.u4ot0tu4zr.rtp",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0xdg4a4a.rtp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80894"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:03:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u4ot0tu4zr"
+        },
+        {
+          "Name": "label",
+          "Value": "img/slider/0xdg4a4a.rtp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmyKZUe/4yWYfJsSRiZE7eLJi1Re07bSzFOGcMsdejY="
+        }
+      ]
+    },
     {
       "Route": "img/slider/0yyea2aj.pow7nv0fos.u3z",
       "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\0yyea2aj.u3z",
@@ -115,6 +239,88 @@
         }
       ],
       "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="
+        }
+      ]
+    },
+    {
+      "Route": "img/slider/kuwenwsl.4ma",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\kuwenwsl.4ma",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 21:26:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="
+        }
+      ]
+    },
+    {
+      "Route": "img/slider/kuwenwsl.pow7nv0fos.4ma",
+      "AssetFile": "C:\\Users\\hp\\source\\repos\\Final#CFF\\Final#CFF.API\\wwwroot\\img\\slider\\kuwenwsl.4ma",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 21:26:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pow7nv0fos"
+        },
+        {
+          "Name": "label",
+          "Value": "img/slider/kuwenwsl.4ma"
+        },
         {
           "Name": "integrity",
           "Value": "sha256-x0ulLhXk18m2A3KZMe0iXLFj7J7EJkFHFjjvniHCnNY="

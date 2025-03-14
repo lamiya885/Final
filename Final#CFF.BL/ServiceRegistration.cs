@@ -28,6 +28,7 @@ namespace Final_CFF.BL
             services.AddScoped<ITokenHandler,TokenHandler>();
             services.AddScoped<IStripeService,StripeService>();
             services.AddScoped<IHeatingSystemService,HeatingSystemService>();
+            services.AddScoped<IHouseholdExpensesService,HouseholdExpensesService>();
             return services;
         }
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)

@@ -11,7 +11,7 @@ namespace Final_CFF.BL.Services.Interfaces
 {
     public interface IApartmentService
     {
-        Task<IEnumerable<Building>> GetAllAsync();
+        Task<IEnumerable<Apartment>> GetAllAsync();
         Task<Guid> CreateAsync(CreateApartmentDTO DTO);
         Task<Guid> UpdateAsync(UpdateApartmentDTO DTO, Guid id);
         Task<Guid> DeleteAsync(Guid id);
