@@ -19,5 +19,13 @@ public class SliderConfiguration : IEntityTypeConfiguration<Slider>
             .IsRequired();
         builder.Property(s=>s.ImageUrl)
             .IsRequired();
+
+        builder.Property(c => c.CreateTime)
+            .IsRequired()
+            .HasDefaultValueSql("GETDATE()");
+
+        builder.Property(c => c.IsDeleted)
+               .IsRequired()
+               .HasDefaultValue(false);
     }
 }

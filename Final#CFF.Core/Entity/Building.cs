@@ -11,4 +11,6 @@ public  class Building:BaseEntity
 {
     public string BuildingName { get; set; }
     public ICollection<Apartment> Apartments { get; set; }
+  //  public ICollection<User> Users { get; set; }
+
 }

@@ -17,6 +17,11 @@ public class BuildingConfiguration : IEntityTypeConfiguration<Building>
             .IsRequired()
             .HasMaxLength(64);
 
+        //builder.HasMany(a => a.Users)
+        //  .WithOne(a => a.Building)
+        //  .HasForeignKey(a => a.BuildingId);
+
+
         builder.HasMany(b => b.Apartments)
             .WithOne(b => b.Building)
             .HasForeignKey(b => b.BuildingId);

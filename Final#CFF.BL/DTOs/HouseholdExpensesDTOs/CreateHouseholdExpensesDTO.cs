@@ -8,7 +8,8 @@ namespace Final_CFF.BL.DTOs.HouseholdExpensesDTOs
 {
     public class CreateHouseholdExpensesDTO
     {
-        public decimal Price;
-        public bool IsPaid;
+        public decimal Price { get; set; }
+        public string Title { get; set; }
+        public bool IsPaid { get; set; }
     }
 }

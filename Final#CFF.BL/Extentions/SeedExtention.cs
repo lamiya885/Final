@@ -36,9 +36,11 @@ public static class SeedExtention
                     UserName = "admin",
                     Email = "admin@gmail.com",
                     ImageUrl = "photo.jpg",
-
-                    ApertmentId= new Guid("4a8b1bb8-74d0-4b0b-b1c5-ff6f318401e8")
+                    ApartmentNo = 0,
+                    ApertmentId = new Guid("4a8b1bb8-74d0-4b0b-b1c5-ff6f318401e8"),
+                  //  BuildingId = new Guid("1ba1ae61-fcea-4194-8b51-19d01f69080a")
                 };
+                userManager.CreateAsync(user, "Admin").Wait();
                 userManager.AddToRoleAsync(user, nameof(Roles.Admin)).Wait();
             }
         }

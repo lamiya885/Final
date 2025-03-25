@@ -234,6 +234,95 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "Create",
+    "RelativePath": "api/HouseholdExpenses/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DTO",
+        "Type": "Final_CFF.BL.DTOs.HouseholdExpensesDTOs.CreateHouseholdExpensesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "Delete",
+    "RelativePath": "api/HouseholdExpenses/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "EachApartmentHasToPay",
+    "RelativePath": "api/HouseholdExpenses/EachApartmentHasToPay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "EachApartmentHasToPayAll",
+    "RelativePath": "api/HouseholdExpenses/EachApartmentHasToPayAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "Get",
+    "RelativePath": "api/HouseholdExpenses/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_CFF.API.Controllers.HouseholdExpensesController",
+    "Method": "Update",
+    "RelativePath": "api/HouseholdExpenses/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "DTO",
+        "Type": "Final_CFF.BL.DTOs.HouseholdExpensesDTOs.UpdateHoueholdExpenesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Final_CFF.API.Controllers.SlidersController",
     "Method": "Create",
     "RelativePath": "api/Sliders/Create",

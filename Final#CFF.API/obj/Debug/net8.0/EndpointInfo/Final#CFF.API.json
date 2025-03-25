@@ -394,6 +394,146 @@
         }
       }
     },
+    "/api/HouseholdExpenses/Get": {
+      "get": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HouseholdExpenses/Create": {
+      "post": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHouseholdExpensesDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHouseholdExpensesDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHouseholdExpensesDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HouseholdExpenses/Update": {
+      "post": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHoueholdExpenesDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHoueholdExpenesDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHoueholdExpenesDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HouseholdExpenses/Delete": {
+      "delete": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HouseholdExpenses/EachApartmentHasToPay": {
+      "post": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HouseholdExpenses/EachApartmentHasToPayAll": {
+      "post": {
+        "tags": [
+          "HouseholdExpenses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Sliders/Get": {
       "get": {
         "tags": [
@@ -668,6 +808,23 @@
         },
         "additionalProperties": false
       },
+      "CreateHouseholdExpensesDTO": {
+        "type": "object",
+        "properties": {
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPaid": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreatePaymentDTO": {
         "type": "object",
         "properties": {
@@ -690,13 +847,6 @@
           "currency": {
             "type": "string",
             "nullable": true
-          },
-          "paymentMethod": {
-            "type": "string",
-            "nullable": true
-          },
-          "confirm": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -745,6 +895,10 @@
             "nullable": true
           }
         },
+        "additionalProperties": false
+      },
+      "UpdateHoueholdExpenesDTO": {
+        "type": "object",
         "additionalProperties": false
       }
     },

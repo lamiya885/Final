@@ -16,6 +16,17 @@ namespace Final_CFF.DAL.Configurations
             builder.Property(h => h.Price)
             .IsRequired()
             .HasMaxLength(100000);
+            builder.Property(h => h.Title)
+                .IsRequired()
+                .HasMaxLength(64);
+
+            builder.Property(c => c.CreateTime)
+            .IsRequired()
+            .HasDefaultValueSql("GETDATE()");
+
+            builder.Property(c => c.IsDeleted)
+                   .IsRequired()
+                   .HasDefaultValue(false);
 
         }
     }

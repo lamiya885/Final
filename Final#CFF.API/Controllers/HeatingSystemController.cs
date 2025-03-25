@@ -17,7 +17,7 @@ namespace Final_CFF.API.Controllers
             return Ok(await _service.GetAllAsync());
         }
         [Authorize(Roles = "Resident")]
-        [HttpPost]
+        [HttpPost]  
         public async Task<IActionResult> Create(CreateHeatingDTO dto)
         {
             await _service.CreateAsync(dto);

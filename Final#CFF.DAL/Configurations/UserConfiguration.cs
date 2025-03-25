@@ -26,5 +26,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasOne(u => u.Apartment)
             .WithMany(u => u.Users)
             .HasForeignKey(u => u.ApertmentId);
+
+        //builder.HasOne(u=>u.Building)
+        //    .WithMany(u=>u.Users)
+        //    .HasForeignKey(u=>u.BuildingId);
+
     }
 }

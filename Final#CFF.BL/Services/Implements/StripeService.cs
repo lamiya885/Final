@@ -33,8 +33,8 @@ public class StripeService:IStripeService
         if (string.IsNullOrEmpty(createPaymentDTO.Email))
             throw new ArgumentException("Email is required");
 
-        if (string.IsNullOrEmpty(createPaymentDTO.PaymentMethod))
-            throw new ArgumentException("Payment method is required");
+        //if (string.IsNullOrEmpty(createPaymentDTO.PaymentMethod))
+        //    throw new ArgumentException("Payment method is required");
 
         if (string.IsNullOrEmpty(createPaymentDTO.Currency))
             throw new ArgumentException("Currency is required");
@@ -48,10 +48,18 @@ public class StripeService:IStripeService
         {
             Amount = amountInCents,
             Currency = createPaymentDTO.Currency.ToLower(), // USD, EUR gibi küçük harf olmalı
-            PaymentMethod = createPaymentDTO.PaymentMethod,
+            //PaymentMethod = createPaymentDTO.PaymentMethod,
             ReceiptEmail = createPaymentDTO.Email,
             Description = createPaymentDTO.Description,
-            Confirm = createPaymentDTO.Confirm
+            Confirm = true,
+            ReturnUrl = "https://yourwebsite.com/payment-success",
+            AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions
+            {
+                Enabled = true,
+                AllowRedirects = "never"
+            },
+            PaymentMethod = "pm_card_visa",
+
         };
 
         var service = new PaymentIntentService();

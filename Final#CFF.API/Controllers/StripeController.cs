@@ -36,21 +36,21 @@ namespace Final_CFF.API.Controllers
                 Console.WriteLine($"Stripe error: {e.Message}");
                 return BadRequest();
             }
-            catch ( Exception ex )
+            catch (Exception ex)
             {
-                throw new Exception(ex.Message );
+                throw new Exception(ex.Message);
             }
         }
         [HttpPost]
-        public async Task<IActionResult> PaymentIntent(CreatePaymentDTO DTO)
+        public async Task<IActionResult> PaymentIntent([FromBody] CreatePaymentDTO DTO)
         {
-           _service.PaymentIntent(DTO);
-            return Ok();
+            var result = await _service.PaymentIntent(DTO);
+            return Ok(result);
         }
-      
+
 
         [HttpPost]
-        public async Task<IActionResult> Charge( ChargeRequest request)
+        public async Task<IActionResult> Charge(ChargeRequest request)
         {
             var charge = await _service.CreateCharge(request.Token, request.Amount);
 

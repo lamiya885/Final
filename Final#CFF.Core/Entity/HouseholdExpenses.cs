@@ -10,6 +10,7 @@ namespace Final_CFF.Core.Entity
     public  class HouseholdExpenses :BaseEntity
     {
         public  decimal Price { get; set; }
+        public string Title { get; set; }
         public bool IsPaid { get; set; }
 
 

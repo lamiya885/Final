@@ -9,6 +9,7 @@ namespace Final_CFF.BL.DTOs.HouseholdExpensesDTOs
     public class UpdateHoueholdExpenesDTO
     {
         public decimal Price;
+        public string Title;
         public bool IsPaid;
     }
 }

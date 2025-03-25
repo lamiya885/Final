@@ -16,5 +16,6 @@ namespace Final_CFF.BL.Services.Interfaces
         Task<Guid> UpdateAsync(UpdateHoueholdExpenesDTO DTO, Guid id);
         Task<Guid> DeleteAsync(Guid id);
         Task<decimal> EachApartmentHasToPay(Guid id);
+        Task<decimal> EachApartmentHasToPayAll();
     }
 }

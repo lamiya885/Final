@@ -22,6 +22,7 @@ namespace Final_CFF.BL.Services.Implements
             return (Task<IEnumerable<HouseholdExpenses>>)entities.Select(x => new HouseholdExpensesGetDTO
             {
                 Price = x.Price,
+                Title = x.Title,
                 IsPaid = x.IsPaid
             });
         }
@@ -30,6 +31,7 @@ namespace Final_CFF.BL.Services.Implements
             HouseholdExpenses expenses = new HouseholdExpenses
             {
                 Price = DTO.Price,
+                Title = DTO.Title,
                 IsPaid = DTO.IsPaid
             };
             await _repo.AddAsync(expenses);
@@ -42,6 +44,7 @@ namespace Final_CFF.BL.Services.Implements
 
             entity.Price = DTO.Price;
             entity.IsPaid = DTO.IsPaid;
+            entity.Title = DTO.Title;
 
             await _repo.SaveAsync();
             return entity.Id;
@@ -64,6 +67,16 @@ namespace Final_CFF.BL.Services.Implements
 
             var result = entity.Price / count;
             return result;
+        }
+
+        public async Task<decimal> EachApartmentHasToPayAll()
+        {
+            var entities =  _repo.GetAll();
+
+            var count= await _repo.ApartmentCountAsync();
+
+            var result = entities.Sum(e => e.Price) / count;
+            return (decimal)result;
         }
     }
 }

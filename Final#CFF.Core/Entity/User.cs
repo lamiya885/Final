@@ -17,4 +17,6 @@ public class User : IdentityUser
     public Guid ApertmentId { get; set; }
     public int ApartmentNo { get; set; }
     public Apartment Apartment { get; set; }
+   // public Guid BuildingId { get; set; }
+   // public Building Building { get; set; }
 }
